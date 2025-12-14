@@ -309,43 +309,54 @@ export default function Home() {
           </div>
 
           {/* Team Members Grid */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             {/* CEO */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <span className="text-3xl font-bold text-primary">AI</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Ashraf Islam Ashfaq</h3>
+              <p className="text-sm font-medium text-primary mb-4">CEO</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                System architect overseeing AquiVira's end-to-end water reliability platform, aligning filtration science, service execution, and company strategy.
+              </p>
+            </div>
+            
+            {/* COO */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="text-3xl font-bold text-primary">MB</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Mobassara Jannat</h3>
-              <p className="text-sm font-medium text-primary mb-4">CEO</p>
+              <p className="text-sm font-medium text-primary mb-4">COO</p>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Supply Chain & Marketing. Leading AquiVira's vision to transform household water purification across
                 Bangladesh.
               </p>
             </div>
 
-            {/* COO */}
+            {/* CTO */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="text-3xl font-bold text-primary">MZ</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Meherin Zarin Oranti</h3>
-              <p className="text-sm font-medium text-primary mb-4">COO</p>
+              <p className="text-sm font-medium text-primary mb-4">CTO</p>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Filtration Design. Pioneering the science behind AquiVira's multi-layer purification system for maximum
                 purity.
               </p>
             </div>
 
-            {/* CTO */}
+            {/* CMO */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="text-3xl font-bold text-primary">DR</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Deepro Ruhul Wahab</h3>
-              <p className="text-sm font-medium text-primary mb-4">CTO</p>
+              <p className="text-sm font-medium text-primary mb-4">CMO</p>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Technical Integration. Ensuring seamless performance and innovation in every aspect of AquiVira's
-                technology.
+                Creating marketing campaigns that resonate with our target audience and drive sales.
               </p>
             </div>
           </div>
@@ -417,19 +428,19 @@ export default function Home() {
           <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-10 shadow-sm border border-amber-100">
             <div className="text-center mb-8">
               <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="text-3xl font-bold text-primary">MB</span>
+                <span className="text-3xl font-bold text-primary">AI</span>
               </div>
-              <h3 className="text-2xl font-bold mb-1">Mobassara Jannat</h3>
+              <h3 className="text-2xl font-bold mb-1">Ashraf Islam Ashfaq</h3>
               <p className="text-primary font-semibold mb-8">CEO, AquiVira</p>
 
               {/* Contact Details */}
               <div className="space-y-4">
                 <a
-                  href="mailto:jannat.ruetipe21@gmail.com"
+                  href="mailto:ashraf.ashfaq@example.com"
                   className="flex items-center justify-center gap-3 text-foreground hover:text-primary transition-colors"
                 >
                   <Mail className="w-5 h-5" />
-                  <span className="text-lg">jannat.ruetipe21@gmail.com</span>
+                  <span className="text-lg">ashraf.ashfaq@example.com</span>
                 </a>
                 <a
                   href="tel:+8801864727230"
