@@ -420,44 +420,75 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
             <p className="text-lg text-muted-foreground">
-              Have questions? We'd love to hear from you. Reach out to our CEO directly.
+              Have questions? We'd love to hear from you. Reach out to our leadership team directly.
             </p>
           </div>
 
-          {/* Contact Card */}
-          <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-10 shadow-sm border border-amber-100">
-            <div className="text-center mb-8">
-              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="text-3xl font-bold text-primary">AI</span>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* CEO Contact Card */}
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 shadow-sm border border-amber-100">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-primary">AI</span>
+                </div>
+                <h3 className="text-xl font-bold mb-1">Ashraf Islam Ashfaq</h3>
+                <p className="text-primary font-semibold">CEO, AquiVira</p>
               </div>
-              <h3 className="text-2xl font-bold mb-1">Ashraf Islam Ashfaq</h3>
-              <p className="text-primary font-semibold mb-8">CEO, AquiVira</p>
 
-              {/* Contact Details */}
-              <div className="space-y-4">
+              {/* CEO Contact Details */}
+              <div className="space-y-3">
                 <a
-                  href="mailto:ashraf.ashfaq@example.com"
-                  className="flex items-center justify-center gap-3 text-foreground hover:text-primary transition-colors"
+                  href="mailto:ashrafislam@aquivira.com"
+                  className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
                 >
-                  <Mail className="w-5 h-5" />
-                  <span className="text-lg">ashraf.ashfaq@example.com</span>
+                  <Mail className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm">ashrafislam@aquivira.com</span>
+                </a>
+                <a
+                  href="tel:01678738503"
+                  className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
+                >
+                  <Phone className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm">01678738503</span>
+                </a>
+              </div>
+            </div>
+
+            {/* COO Contact Card */}
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 shadow-sm border border-amber-100">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-primary">MB</span>
+                </div>
+                <h3 className="text-xl font-bold mb-1">Mobassara Jannat</h3>
+                <p className="text-primary font-semibold">COO, AquiVira</p>
+              </div>
+
+              {/* COO Contact Details */}
+              <div className="space-y-3">
+                <a
+                  href="mailto:Jannat@aquivira.com"
+                  className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
+                >
+                  <Mail className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm">Jannat@aquivira.com</span>
                 </a>
                 <a
                   href="tel:+8801864727230"
-                  className="flex items-center justify-center gap-3 text-foreground hover:text-primary transition-colors"
+                  className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
                 >
-                  <Phone className="w-5 h-5" />
-                  <span className="text-lg">+880-1864-727230</span>
+                  <Phone className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm">+880-1864-727230</span>
                 </a>
               </div>
             </div>
+          </div>
 
-            <div className="border-t border-amber-200 pt-8">
-              <p className="text-center text-muted-foreground">
-                Whether you have product inquiries, partnership opportunities, or just want to learn more about
-                AquiVira, we're here to help.
-              </p>
-            </div>
+          <div className="mt-8 text-center">
+            <p className="text-muted-foreground">
+              Whether you have product inquiries, partnership opportunities, or just want to learn more about
+              AquiVira, we're here to help.
+            </p>
           </div>
         </div>
       </section>
