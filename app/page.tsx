@@ -57,9 +57,9 @@ export default function Home() {
           </nav>
 
           {/* Desktop CTA Button */}
-          <button onClick={() => scrollToSection("cta")} className="hidden md:inline-block btn-primary text-sm">
+          <a href="https://forms.gle/dWfQtW2n4gzYz5s2A" className="hidden md:inline-block btn-primary text-sm">
             Pre-Order
-          </button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -104,9 +104,9 @@ export default function Home() {
             >
               Contact
             </button>
-            <button onClick={() => scrollToSection("cta")} className="btn-primary text-sm w-full mt-2">
+            <a href="https://forms.gle/dWfQtW2n4gzYz5s2A" className="btn-primary text-sm w-full mt-2">
               Pre-Order
-            </button>
+            </a>
           </nav>
         )}
       </header>
@@ -143,9 +143,9 @@ export default function Home() {
 
               {/* CTA Buttons */}
               <div className="flex flex-col md:flex-row gap-4">
-                <button onClick={() => scrollToSection("cta")} className="btn-primary">
+                <a href="https://forms.gle/dWfQtW2n4gzYz5s2A" className="btn-primary">
                   Pre-Order Now
-                </button>
+                </a>
                 <button onClick={() => scrollToSection("product")} className="btn-secondary">
                   See Product
                 </button>
@@ -274,9 +274,9 @@ export default function Home() {
 
               {/* Buttons */}
               <div className="flex flex-col md:flex-row gap-4">
-                <button onClick={() => scrollToSection("cta")} className="btn-primary">
+                <a href="https://forms.gle/dWfQtW2n4gzYz5s2A" className="btn-primary">
                   Buy Now
-                </button>
+                </a>
                 <button className="btn-secondary">Learn More</button>
               </div>
             </div>
@@ -292,7 +292,9 @@ export default function Home() {
             Pre-order now and get early-bird pricing + free first-month servicing.
           </p>
 
-          <button className="btn-primary text-lg">Pre-Order AquiVira</button>
+          <a href="https://forms.gle/dWfQtW2n4gzYz5s2A" className="btn-primary text-lg">
+            Pre-Order AquiVira
+          </a>
         </div>
       </section>
 
