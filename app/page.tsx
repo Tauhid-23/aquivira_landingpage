@@ -2,6 +2,7 @@
 
 import { ChevronDown, Droplet, Zap, Shield, Leaf, Menu, X, Mail, Phone } from "lucide-react"
 import { useState } from "react"
+import PhotoGallery from "@/components/PhotoGallery"
 
 export default function Home() {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(0)
@@ -34,13 +35,25 @@ export default function Home() {
               onClick={() => scrollToSection("product")}
               className="text-sm font-medium hover:text-primary transition-colors"
             >
-              Product
+             Product
             </button>
             <button
               onClick={() => scrollToSection("about")}
               className="text-sm font-medium hover:text-primary transition-colors"
             >
-              About
+             About
+            </button>
+            <button
+              onClick={() => scrollToSection("achievements")}
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Achievements
+            </button>
+            <button
+              onClick={() => scrollToSection("gallery")}
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Gallery
             </button>
             <button
               onClick={() => scrollToSection("faq")}
@@ -84,13 +97,25 @@ export default function Home() {
               onClick={() => scrollToSection("product")}
               className="text-sm font-medium hover:text-primary transition-colors text-left py-2"
             >
-              Product
+             Product
             </button>
             <button
               onClick={() => scrollToSection("about")}
               className="text-sm font-medium hover:text-primary transition-colors text-left py-2"
             >
-              About
+             About
+            </button>
+            <button
+              onClick={() => scrollToSection("achievements")}
+              className="text-sm font-medium hover:text-primary transition-colors text-left py-2"
+            >
+              Achievements
+            </button>
+            <button
+              onClick={() => scrollToSection("gallery")}
+              className="text-sm font-medium hover:text-primary transition-colors text-left py-2"
+            >
+              Gallery
             </button>
             <button
               onClick={() => scrollToSection("faq")}
@@ -105,7 +130,7 @@ export default function Home() {
               Contact
             </button>
             <a href="https://forms.gle/dWfQtW2n4gzYz5s2A" className="btn-primary text-sm w-full mt-2">
-              Pre-Order
+             Pre-Order
             </a>
           </nav>
         )}
@@ -302,66 +327,162 @@ export default function Home() {
       <section id="about" className="section-padding bg-secondary">
         <div className="container-wide max-w-5xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet the Team</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Team & Execution Readiness</h2>
             <p className="text-lg text-muted-foreground">
-              Passionate innovators dedicated to bringing clean water to every household in Bangladesh.
+              Committed professionals driving AquiVira's mission with diverse expertise across business, engineering, and operations.
             </p>
           </div>
 
           {/* Team Members Grid */}
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             {/* CEO */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="text-3xl font-bold text-primary">AI</span>
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                <img src="/team-photos/CEO.jpg" alt="Ashraf Islam Ashfaq" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Ashraf Islam Ashfaq</h3>
               <p className="text-sm font-medium text-primary mb-4">CEO</p>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                System architect overseeing AquiVira's end-to-end water reliability platform, aligning filtration science, service execution, and company strategy.
+                Leads filtration R&D, product design, and testing while coordinating strategy, partnerships, and early market validation.
               </p>
             </div>
             
             {/* COO */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="text-3xl font-bold text-primary">MB</span>
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                <img src="/team-photos/COO.jpeg" alt="Most. Mobassara Jannat" className="w-full h-full object-cover" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Mobassara Jannat</h3>
+              <h3 className="text-xl font-semibold mb-2">Most. Mobassara Jannat</h3>
               <p className="text-sm font-medium text-primary mb-4">COO</p>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Supply Chain & Marketing. Leading AquiVira's vision to transform household water purification across
-                Bangladesh.
+                Oversees manufacturing planning, clay artisan coordination, supply chain management, and operational workflow for production readiness.
               </p>
             </div>
 
-            {/* CTO */}
+            {/* Business and Finance Lead */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="text-3xl font-bold text-primary">MZ</span>
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                <img src="/team-photos/Business and Finance lead.jpeg" alt="Abdullah AL-Mamun" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Abdullah AL-Mamun</h3>
+              <p className="text-sm font-medium text-primary mb-4">Business and Finance Lead</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Manages financial modeling, pricing strategy, grant applications, and partnership negotiations to support revenue growth and funding.
+              </p>
+            </div>
+
+            {/* Marketing Team Lead */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                <img src="/team-photos/Marketing Team Lead.jpeg" alt="Meherin Zarin Oranti" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Meherin Zarin Oranti</h3>
-              <p className="text-sm font-medium text-primary mb-4">CTO</p>
+              <p className="text-sm font-medium text-primary mb-4">Marketing Team Lead</p>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Filtration Design. Pioneering the science behind AquiVira's multi-layer purification system for maximum
-                purity.
+                Leads customer outreach, social media campaigns, and early demand generation through community engagement and product promotion.
               </p>
             </div>
 
-            {/* CMO */}
+            {/* PR & Media Team Lead */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="text-3xl font-bold text-primary">DR</span>
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                <img src="/team-photos/PR & Marketing Lead.HEIC" alt="Md Sadekul Islam" className="w-full h-full object-cover" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Deepro Ruhul Wahab</h3>
-              <p className="text-sm font-medium text-primary mb-4">CMO</p>
+              <h3 className="text-xl font-semibold mb-2">Md Sadekul Islam</h3>
+              <p className="text-sm font-medium text-primary mb-4">PR & Media Team Lead</p>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Creating marketing campaigns that resonate with our target audience and drive sales.
+                Handles branding, visual storytelling, product photography, and communication materials for public engagement and brand presence.
+              </p>
+            </div>
+
+            {/* Software & Platform Developer */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                <img src="/team-photos/Software & platform developer.png" alt="Md Tauhidul Islam Chowdhury" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Md Tauhidul Islam Chowdhury</h3>
+              <p className="text-sm font-medium text-primary mb-4">Software & Platform Developer</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Develops and maintains website, supports digital platforms, and builds future software infrastructure for smart monitoring integration.
+              </p>
+            </div>
+
+            {/* Advisor */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center col-span-full max-w-2xl mx-auto">
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                <img src="/team-photos/Advisor.png" alt="Md. Sidratul Montaha Hossain" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Md. Sidratul Montaha Hossain</h3>
+              <p className="text-sm font-medium text-primary mb-4">Advisor – Materials & Filtration Systems</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Lecturer, Ceramic & Metallurgical Engineering, RUET. Brings academic expertise in ceramic materials and water treatment technologies to guide filtration system optimization and material performance testing.
               </p>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Achievements Section */}
+      <section id="achievements" className="section-padding bg-secondary">
+        <div className="container-wide max-w-5xl">
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Achievements</h2>
+            <p className="text-lg text-muted-foreground">
+              Recognitions and milestones that fuel our mission.
+            </p>
+          </div>
+
+          {/* Achievements Grid */}
+          <div className="grid md:grid-cols-4 gap-10">
+            {/* Achievement 1 */}
+            <div className="achievement-card bg-white rounded-2xl p-8 shadow-sm text-center group animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-500 rounded-full mx-auto mb-6 flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+                <span className="text-2xl font-bold text-primary">UIHP</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">UIHP Pre-Seed Winner</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Recognized for innovation in sustainable water purification technology.
+              </p>
+            </div>
+            
+            {/* Achievement 2 */}
+            <div className="achievement-card bg-white rounded-2xl p-8 shadow-sm text-center group animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-500 rounded-full mx-auto mb-6 flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+                <span className="text-2xl font-bold text-primary">AB</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">Accelerating Bangladesh Graduate</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Part of the prestigious program supporting innovative Bangladeshi startups.
+              </p>
+            </div>
+
+            {/* Achievement 3 */}
+            <div className="achievement-card bg-white rounded-2xl p-8 shadow-sm text-center group animate-fade-in-up" style={{animationDelay: '0.3s'}}>
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-500 rounded-full mx-auto mb-6 flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+                <span className="text-2xl font-bold text-primary">BBC</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">Blue Business Idea Competition Winner</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Awarded for outstanding business concept with social impact potential.
+              </p>
+            </div>
+
+            {/* Achievement 4 */}
+            <div className="achievement-card bg-white rounded-2xl p-8 shadow-sm text-center group animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+              <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-500 rounded-full mx-auto mb-6 flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+                <span className="text-2xl font-bold text-primary">GC</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">Greenovation Challenge 2025</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                2nd runners up at Environment Innovation Summit 2025.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery Section */}
+      <PhotoGallery />
 
       {/* FAQ Section */}
       <section id="faq" className="section-padding bg-white">
