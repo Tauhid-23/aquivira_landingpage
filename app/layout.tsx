@@ -9,7 +9,10 @@ const _inter = Inter({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "AquiVira - Pure Water, Naturally | Clay Water Purifier for Bangladesh",
+  title: {
+    default: "AquiVira",
+    template: "%s | AquiVira - Pure Water, Naturally"
+  },
   description:
     "Clean, safe, and beautiful drinking water with AquiVira. A modern clay-based water purifier that removes heavy metals and microbes—100% plastic-free and electricity-free.",
   icons: {
@@ -29,6 +32,10 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
     shortcut: "/icon-light-32x32.png",
+    other: {
+      rel: "icon",
+      url: "/icon-light-32x32.png",
+    },
   },
   openGraph: {
     title: "AquiVira - Pure Water, Naturally",
@@ -56,7 +63,14 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
+  applicationName: "AquiVira",
 }
 
 export default function RootLayout({
