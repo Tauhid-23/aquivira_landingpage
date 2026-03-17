@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   title: "AquiVira - Pure Water, Naturally | Clay Water Purifier for Bangladesh",
   description:
     "Clean, safe, and beautiful drinking water with AquiVira. A modern clay-based water purifier that removes heavy metals and microbes—100% plastic-free and electricity-free.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
@@ -52,6 +51,7 @@ export const metadata: Metadata = {
     title: "AquiVira - Pure Water, Naturally",
     description: "Clean, safe, and beautiful drinking water with AquiVira.",
     images: ["/aquivira-logo.png"],
+    creator: "@AquiVira",
   },
   robots: {
     index: true,
