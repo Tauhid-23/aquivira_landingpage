@@ -1,0 +1,22 @@
+{
+  "name": "AquiVira - Pure Water, Naturally",
+  "short_name": "AquiVira",
+  "description": "Clean, safe, and beautiful drinking water with AquiVira. A modern clay-based water purifier for Bangladesh.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d97706",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-light-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
