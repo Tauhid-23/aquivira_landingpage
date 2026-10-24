@@ -338,24 +338,24 @@ export default function Home() {
             {/* CEO */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
-                <img src="/team-photos/CEO.jpg" alt="Ashraf Islam Ashfaq" className="w-full h-full object-cover" />
+                <img src="/team-photos/COO.jpeg" alt="Most. Mobassara Jannat" className="w-full h-full object-cover" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Ashraf Islam Ashfaq</h3>
+              <h3 className="text-xl font-semibold mb-2">Most. Mobassara Jannat</h3>
               <p className="text-sm font-medium text-primary mb-4">CEO</p>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Leads filtration R&D, product design, and testing while coordinating strategy, partnerships, and early market validation.
+                Oversees manufacturing planning, clay artisan coordination, supply chain management, and operational workflow for production readiness.
               </p>
             </div>
             
             {/* COO */}
             <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
-                <img src="/team-photos/COO.jpeg" alt="Most. Mobassara Jannat" className="w-full h-full object-cover" />
+                <img src="/team-photos/CEO.jpg" alt="Ashraf Islam Ashfaq" className="w-full h-full object-cover" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Most. Mobassara Jannat</h3>
+              <h3 className="text-xl font-semibold mb-2">Ashraf Islam Ashfaq</h3>
               <p className="text-sm font-medium text-primary mb-4">COO</p>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Oversees manufacturing planning, clay artisan coordination, supply chain management, and operational workflow for production readiness.
+                Leads filtration R&D, product design, and testing while coordinating strategy, partnerships, and early market validation.
               </p>
             </div>
 
@@ -550,42 +550,13 @@ export default function Home() {
             <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 shadow-sm border border-amber-100">
               <div className="text-center mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-primary">AI</span>
+                  <span className="text-2xl font-bold text-primary">MB</span>
                 </div>
-                <h3 className="text-xl font-bold mb-1">Ashraf Islam Ashfaq</h3>
+                <h3 className="text-xl font-bold mb-1">Mobassara Jannat</h3>
                 <p className="text-primary font-semibold">CEO, AquiVira</p>
               </div>
 
               {/* CEO Contact Details */}
-              <div className="space-y-3">
-                <a
-                  href="mailto:ashrafislam@aquivira.com"
-                  className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
-                >
-                  <Mail className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm">ashrafislam@aquivira.com</span>
-                </a>
-                <a
-                  href="tel:01678738503"
-                  className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
-                >
-                  <Phone className="w-4 h-4 flex-shrink-0" />
-                  <span className="text-sm">01678738503</span>
-                </a>
-              </div>
-            </div>
-
-            {/* COO Contact Card */}
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 shadow-sm border border-amber-100">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-primary">MB</span>
-                </div>
-                <h3 className="text-xl font-bold mb-1">Mobassara Jannat</h3>
-                <p className="text-primary font-semibold">COO, AquiVira</p>
-              </div>
-
-              {/* COO Contact Details */}
               <div className="space-y-3">
                 <a
                   href="mailto:Jannat@aquivira.com"
@@ -600,6 +571,35 @@ export default function Home() {
                 >
                   <Phone className="w-4 h-4 flex-shrink-0" />
                   <span className="text-sm">+880-1864-727230</span>
+                </a>
+              </div>
+            </div>
+
+            {/* COO Contact Card */}
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 shadow-sm border border-amber-100">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-200 to-amber-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-primary">AI</span>
+                </div>
+                <h3 className="text-xl font-bold mb-1">Ashraf Islam Ashfaq</h3>
+                <p className="text-primary font-semibold">COO, AquiVira</p>
+              </div>
+
+              {/* COO Contact Details */}
+              <div className="space-y-3">
+                <a
+                  href="mailto:ashrafislam@aquivira.com"
+                  className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
+                >
+                  <Mail className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm">ashrafislam@aquivira.com</span>
+                </a>
+                <a
+                  href="tel:01678738503"
+                  className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
+                >
+                  <Phone className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-sm">01678738503</span>
                 </a>
               </div>
             </div>
