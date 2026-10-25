@@ -141,17 +141,26 @@ export default function Home() {
         <section className="section-padding bg-white">
           <div className="container-wide">
             <div className="grid lg:grid-cols-12 gap-12 items-center">
-              <div className="lg:col-span-6">
-                <div className="aspect-[4/3] rounded-3xl overflow-hidden bg-stone-100 border border-border shadow-lg">
-                  <img
-                    src="/clay-water-purifier-product-photography-modern-des.jpg"
-                    alt="AquiVira clay craftsmanship"
-                    className="w-full h-full object-cover"
-                  />
+              <div className="lg:col-span-5 flex justify-center">
+                <div className="relative w-full max-w-md">
+                  <div className="rounded-3xl overflow-hidden bg-gradient-to-b from-stone-100 via-stone-50 to-stone-100 border border-border shadow-xl p-3 sm:p-4 flex items-center justify-center">
+                    <img
+                      src="/aquivira-authentic-purifier.jpg"
+                      alt="Authentic AquiVira Handcrafted Terracotta Water Purifier with Heritage Motifs"
+                      className="w-full h-auto max-h-[580px] object-contain rounded-2xl shadow-sm"
+                    />
+                  </div>
+                  <div className="absolute -bottom-4 -right-2 sm:-right-4 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-xl border border-stone-200 flex items-center gap-2.5">
+                    <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
+                    <div>
+                      <p className="text-[11px] font-bold text-stone-900 leading-tight">Authentic Handcrafted Terracotta</p>
+                      <p className="text-[10px] text-stone-500">Traditional motifs & food-grade tap</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div className="lg:col-span-6">
+              <div className="lg:col-span-7">
                 <span className="text-xs font-bold uppercase tracking-wider text-primary mb-2 block">
                   Natural Material Science
                 </span>
@@ -160,7 +169,7 @@ export default function Home() {
                 </h2>
                 <div className="space-y-4 text-muted-foreground text-base leading-relaxed">
                   <p>
-                    For centuries, clay has been trusted to store and cool water naturally. We've taken this age-old wisdom and engineered it for the modern home.
+                    For centuries, clay has been trusted to store and cool water naturally. We&apos;ve taken this age-old wisdom and engineered it for the modern home.
                   </p>
                   <p>
                     Unlike synthetic materials, our clay vessels &ldquo;breathe.&rdquo; This micro-porosity allows for natural evaporative cooling, keeping your water crisp and refreshing without taking up space in a refrigerator.
@@ -168,6 +177,26 @@ export default function Home() {
                   <p>
                     At the end of its decades-long lifecycle, the clay body safely returns to the earth, leaving zero footprint.
                   </p>
+                </div>
+
+                {/* Craftsmanship & Material Highlights */}
+                <div className="mt-6 grid sm:grid-cols-2 gap-3 pt-6 border-t border-border">
+                  <div className="flex items-start gap-2.5 text-xs">
+                    <span className="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold flex-shrink-0 mt-0.5">✓</span>
+                    <span className="text-stone-700"><strong>Handcrafted Terracotta:</strong> Kiln-fired by master artisans in Rajshahi.</span>
+                  </div>
+                  <div className="flex items-start gap-2.5 text-xs">
+                    <span className="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold flex-shrink-0 mt-0.5">✓</span>
+                    <span className="text-stone-700"><strong>Natural Cooling:</strong> Water naturally 4°C–6°C cooler with zero power.</span>
+                  </div>
+                  <div className="flex items-start gap-2.5 text-xs">
+                    <span className="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold flex-shrink-0 mt-0.5">✓</span>
+                    <span className="text-stone-700"><strong>100% Plastic-Free:</strong> Zero microplastics, BPA, or chemical leaching.</span>
+                  </div>
+                  <div className="flex items-start gap-2.5 text-xs">
+                    <span className="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold flex-shrink-0 mt-0.5">✓</span>
+                    <span className="text-stone-700"><strong>Long-Life Cartridge:</strong> 6,000+ to 8,000 Liters (20+ L/day).</span>
+                  </div>
                 </div>
 
                 <div className="mt-8 flex flex-wrap gap-4">

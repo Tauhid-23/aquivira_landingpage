@@ -263,10 +263,17 @@ export default function CheckoutPanel() {
             {/* Main Product Card */}
             <div className="p-6 rounded-2xl border-2 border-primary bg-primary/5 shadow-sm relative">
               <span className="absolute -top-3 right-6 px-3 py-1 bg-red-600 text-white text-xs font-bold rounded-full shadow-sm flex items-center gap-1">
-                <Flame className="w-3.5 h-3.5" /> 30% OFF • Limited Stock
+                <Flame className="w-3.5 h-3.5" /> 31% OFF • Limited Stock
               </span>
 
-              <div className="flex flex-col sm:flex-row items-start justify-between gap-4">
+              <div className="flex flex-col sm:flex-row items-start justify-between gap-5">
+                <div className="w-20 h-28 sm:w-24 sm:h-32 rounded-2xl overflow-hidden bg-stone-100 border border-stone-200/80 shadow-sm flex-shrink-0">
+                  <img
+                    src="/aquivira-authentic-purifier.jpg"
+                    alt="AquiVira Authentic Handcrafted Clay Purifier"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold">{MAIN_PRODUCT.name}</h3>
                   <p className="text-xs text-stone-600 mt-1">{MAIN_PRODUCT.tagline}</p>

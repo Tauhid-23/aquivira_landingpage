@@ -7,6 +7,20 @@ Format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [v0.7.3] - 2026-10-25
+
+### Changed
+- **Authentic Product Photo Integration**:
+  - Replaced the modern stock placeholder in "The Magic of Natural Clay" section on the homepage (`app/page.tsx`) with the actual, authentic handcrafted AquiVira clay purifier photograph (`/aquivira-authentic-purifier.jpg`).
+  - Showcases the authentic Rajshahi terracotta body, traditional hand-painted architectural heritage motifs, food-grade dispensing tap, and matching clay cup.
+  - Refined container framing to preserve the full vertical profile from lid to base without distorted cropping, paired with an "Authentic Handcrafted Terracotta" verified badge.
+  - Added craftsmanship and material highlights grid directly beside the photo (100% plastic-free, 4°C–6°C natural cooling, 6,000+ to 8,000L longevity).
+- **Checkout Product Preview**:
+  - Added an authentic product thumbnail preview in Step 1 of the checkout panel (`components/checkout/CheckoutPanel.tsx`).
+  - Synchronized discount badge to 31% OFF (৳14,499 down to ৳9,999).
+
+---
+
 ## [v0.7.2] - 2026-10-25
 
 ### Changed
