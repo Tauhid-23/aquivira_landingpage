@@ -7,6 +7,19 @@ Format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [v1.2.2] - 2026-10-25
+
+### Changed
+- **SEO Title & Description Optimization** (`app/layout.tsx`):
+  - Fixed Bing SEO Warning *"Title too short"* by expanding the default title from `"AquiVira"` (8 chars) to `"AquiVira — Eco-Friendly Clay Water Purifier"` (46 chars, optimal 40–60 range).
+  - Fixed Bing SEO Warning *"Meta Description too long or too short"* by tuning the description length to exactly 142 characters (optimal 130–160 range).
+
+### Rollback Target
+- **Previous stable commit**: `50d5130`
+- **Rollback command**: `git revert HEAD` or `git reset --hard 50d5130`
+
+---
+
 ## [v1.2.1] - 2026-10-25
 
 ### Added

@@ -11,11 +11,11 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.aquivira.com"),
   title: {
-    default: "AquiVira",
+    default: "AquiVira — Eco-Friendly Clay Water Purifier",
     template: "%s | AquiVira - Pure Water, Naturally"
   },
   description:
-    "Clean, safe, and beautiful drinking water with AquiVira. A modern clay-based water purifier that removes heavy metals and microbes—100% plastic-free and electricity-free.",
+    "AquiVira is an eco-friendly clay water purifier in Bangladesh. Removes heavy metals and microbes with zero plastic and zero electricity.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
