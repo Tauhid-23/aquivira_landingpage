@@ -7,6 +7,19 @@ Format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [v1.2.1] - 2026-10-25
+
+### Added
+- **Google Search Console Verification**:
+  - Added verification meta tag `B_cP4vwAkwH7hn3_0ETPNKvqYHKV02da65tg7kDuPWA` in `app/layout.tsx`.
+  - Added HTML verification file `public/googlef43b29a8ffd7300b.html` supporting both verification methods simultaneously.
+
+### Rollback Target
+- **Previous stable commit**: `28a605a`
+- **Rollback command**: `git revert HEAD` or `git reset --hard 28a605a`
+
+---
+
 ## [v1.2.0] - 2026-10-25
 
 ### Added
