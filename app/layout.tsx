@@ -9,6 +9,7 @@ const _inter = Inter({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.aquivira.com"),
   title: {
     default: "AquiVira",
     template: "%s | AquiVira - Pure Water, Naturally"
@@ -17,25 +18,23 @@ export const metadata: Metadata = {
     "Clean, safe, and beautiful drinking water with AquiVira. A modern clay-based water purifier that removes heavy metals and microbes—100% plastic-free and electricity-free.",
   icons: {
     icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        url: "/icon-32x32.png",
       },
     ],
-    apple: "/apple-icon.png",
-    shortcut: "/icon-light-32x32.png",
-    other: {
-      rel: "icon",
-      url: "/icon-light-32x32.png",
-    },
   },
   openGraph: {
     title: "AquiVira - Pure Water, Naturally",
@@ -45,8 +44,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/aquivira-logo.png",
-        width: 1200,
-        height: 630,
+        width: 1024,
+        height: 1024,
         alt: "AquiVira Logo",
       },
     ],
