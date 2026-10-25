@@ -28,7 +28,7 @@ export default function Navbar() {
           <img src="/aquivira-logo.png" alt="AquiVira" className="h-full w-auto object-contain" />
         </Link>
 
-        <nav className="hidden lg:flex gap-7 items-center" aria-label="Main">
+        <nav className="hidden lg:flex gap-5 xl:gap-7 items-center" aria-label="Main">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}

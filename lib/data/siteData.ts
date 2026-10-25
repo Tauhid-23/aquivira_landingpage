@@ -7,6 +7,7 @@ export const NAV_LINKS = [
   { href: "/product", label: "The Science of Clay" },
   { href: "/impact", label: "Our Impact" },
   { href: "/about", label: "About Us" },
+  { href: "/media", label: "Media" },
   { href: "/contact#faq", label: "FAQ" },
 ]
 
