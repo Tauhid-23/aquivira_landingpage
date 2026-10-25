@@ -3,6 +3,7 @@ import Link from "next/link"
 import Navbar from "@/components/global/Navbar"
 import Footer from "@/components/global/Footer"
 import PhotoGallery from "@/components/PhotoGallery"
+import SupportedBy from "@/components/global/SupportedBy"
 import { AWARDS } from "@/lib/data/siteData"
 
 export const metadata: Metadata = {
@@ -56,6 +57,18 @@ export default function MediaPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Supported By Section */}
+        <section className="section-padding bg-stone-50 border-t border-border">
+          <div className="container-wide">
+            <SupportedBy
+              variant="light"
+              badge="Institutional Backing"
+              title="Proudly Supported By"
+              subtitle="Accelerated by leading global development organizations and international water initiatives."
+            />
           </div>
         </section>
 

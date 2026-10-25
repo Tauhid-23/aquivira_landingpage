@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Droplet, Zap, Shield, Leaf, ArrowRight, Check, Award, Flame, Phone } from "lucide-react"
 import Navbar from "@/components/global/Navbar"
 import Footer from "@/components/global/Footer"
+import SupportedBy from "@/components/global/SupportedBy"
 import { TAGLINE, AWARDS, FAQS } from "@/lib/data/siteData"
 import { HELPLINE_PHONE, HELPLINE_PHONE_RAW } from "@/lib/data/checkoutData"
 
@@ -233,6 +234,16 @@ export default function Home() {
                   <p className="text-xs text-stone-400 leading-relaxed">{award.description}</p>
                 </div>
               ))}
+            </div>
+
+            {/* Supported By Showcase */}
+            <div className="mt-16 pt-12 border-t border-white/10">
+              <SupportedBy
+                variant="dark"
+                badge="Institutional Backing"
+                title="Proudly Supported By"
+                subtitle="AquiVira's technology and mission are backed and accelerated by leading global development and water organizations."
+              />
             </div>
           </div>
         </section>

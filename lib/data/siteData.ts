@@ -80,6 +80,42 @@ export const ADVISOR: TeamMember = {
   bio: "Lecturer, Ceramic & Metallurgical Engineering, RUET. Brings academic expertise in ceramic materials and water treatment technologies to guide filtration system optimization and material performance testing.",
 }
 
+export interface Supporter {
+  name: string
+  bengaliName?: string
+  logo: string
+  alt: string
+  role: string
+  description: string
+}
+
+export const SUPPORTERS: Supporter[] = [
+  {
+    name: "Embassy of Switzerland in Bangladesh",
+    bengaliName: "সুইজারল্যান্ডের সহায়তায়",
+    logo: "/partners/switzerland.jpg",
+    alt: "সুইজারল্যান্ডের সহায়তায় - Supported by Switzerland",
+    role: "Development Partner",
+    description: "Supported by Switzerland through initiatives promoting sustainable water, environmental resilience, and green innovation.",
+  },
+  {
+    name: "WaterAid Bangladesh",
+    bengaliName: "ওয়াটারএইড বাংলাদেশ",
+    logo: "/partners/wateraid.png",
+    alt: "WaterAid - Water, Sanitation and Hygiene",
+    role: "WASH Innovation Partner",
+    description: "International NGO dedicated to transforming lives through universal access to safe water, sanitation, and hygiene.",
+  },
+  {
+    name: "Swisscontact",
+    bengaliName: "সুইসকনট্যাক্ট বাংলাদেশ",
+    logo: "/partners/swisscontact.png",
+    alt: "Swisscontact - Swiss Foundation for Technical Cooperation",
+    role: "Enterprise & Technical Partner",
+    description: "Swiss non-profit foundation championing sustainable private enterprise, inclusive economic growth, and green technology.",
+  },
+]
+
 export const AWARDS = [
   {
     short: "UIHP",

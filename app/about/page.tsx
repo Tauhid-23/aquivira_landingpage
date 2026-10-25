@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Users, GraduationCap, Heart, ArrowRight } from "lucide-react"
 import Navbar from "@/components/global/Navbar"
 import Footer from "@/components/global/Footer"
+import SupportedBy from "@/components/global/SupportedBy"
 import { TEAM, ADVISOR } from "@/lib/data/siteData"
 
 export const metadata: Metadata = {
@@ -41,6 +42,18 @@ export default function AboutPage() {
                 </p>
               </blockquote>
             </div>
+          </div>
+        </section>
+
+        {/* Institutional Backing / Supported By Section */}
+        <section className="section-padding bg-stone-50/70 border-b border-border">
+          <div className="container-wide">
+            <SupportedBy
+              variant="light"
+              badge="Institutional Backing & Partnerships"
+              title="Proudly Supported By"
+              subtitle="AquiVira's mission to deliver sustainable, zero-plastic, off-grid water purification is backed and encouraged by leading global development partners and water organizations."
+            />
           </div>
         </section>
 
