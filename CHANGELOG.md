@@ -7,83 +7,120 @@ Format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [v1.2.2] - 2026-10-25
+## [v0.7.2] - 2026-10-25
 
 ### Changed
-- **SEO Title & Description Optimization** (`app/layout.tsx`):
-  - Fixed Bing SEO Warning *"Title too short"* by expanding the default title from `"AquiVira"` (8 chars) to `"AquiVira — Eco-Friendly Clay Water Purifier"` (46 chars, optimal 40–60 range).
-  - Fixed Bing SEO Warning *"Meta Description too long or too short"* by tuning the description length to exactly 142 characters (optimal 130–160 range).
+- **Daily Usage & Longevity Calibration**:
+  - Calibrated all family consumption models to **20+ Liters average daily usage**:
+    - At 20L/day, 6,000 Liters = **300 days (~10 months)** of daily continuous filtration.
+    - At 20L/day, 8,000 Liters (with regular care) = **400 days (~13 months / over 1 full year)** of safe drinking water per cartridge.
+  - Updated `MAIN_PRODUCT.features` and export constants in `lib/data/checkoutData.ts` to reflect the 20+ Liters/day benchmark.
+  - Aligned the interactive Impact Calculator (`/impact`) to compute annual savings based on 20+ Liters daily family consumption (7,300+ Liters/year, saving 3,650–7,300 plastic bottles per household).
 
-### Rollback Target
-- **Previous stable commit**: `50d5130`
-- **Rollback command**: `git revert HEAD` or `git reset --hard 50d5130`
+---
+
+## [v0.7.1] - 2026-10-25
+
+### Changed
+- **Filter Media Longevity Specification**:
+  - Updated cartridge capacity metrics: The filter kit delivers **over 6,000+ Liters** and up to **8,000 Liters** with proper care.
+- **Pricing & Helpline Synchronization**:
+  - Purifier base: ৳14,499 with 31% discount = **৳9,999 BDT** (Limited Stock).
+  - Extra Cartridge: **৳1,199 BDT** (৳300 off from ৳1,499).
+  - Official Helpline: `+8801330192882` (Phone/WhatsApp).
+
+---
+
+## [v0.7.0] - 2026-10-25
+
+### Added
+- **Hybrid Product Page Architecture (`/product`)**:
+  - Interactive Exploded Engineering Canvas (3-layer core: Biosand, Activated Carbon, Minerals).
+  - Head-to-Head Showdown: AquiVira Clay Purifier vs. Plastic Electric RO (0 kWh vs 180 kWh, 0% water wasted vs 75% wasted, zero microplastics).
+  - Forensic Laboratory Verification Spectrometry (80% heavy metals, 90% microbes).
+  - Evaporative Cooling Physics (~4°C to 6°C temperature drop).
+
+---
+
+## [v0.6.0] - 2026-10-25
+
+### Added
+- **Active On-Site Checkout Panel (`/order`)**:
+  - Real-time product selection (Purifier + Cartridge add-on counter).
+  - Bangladesh 64-District & 8-Division cascading dropdowns.
+  - Cash on Delivery (COD) as primary zero-upfront barrier.
+  - Interactive Mockup Payment Gateways (bKash & Nagad with TrxID capture, Card sandbox).
+  - Automatic order reference code generation (`AQV-XXXXXX`).
+  - 1-Click WhatsApp Order Confirmation dispatch.
+  - Dedicated Corporate & Bulk Orders banner routing to Helpline (`+8801330192882`).
+
+---
+
+## [v0.5.1] - 2026-10-25
+
+### Added
+- **Official Social Channels**:
+  - Facebook: `https://www.facebook.com/aquivira.tech`
+  - LinkedIn: `https://www.linkedin.com/company/aquivira`
+
+---
+
+## [v0.4.1] - 2026-10-25
+
+### Added
+- **Standalone Clay Care Guide (`/clay-care-guide`)**:
+  - 5-step unboxing curing ritual.
+  - Strict chemical-free cleaning rules (warm water + soft brush only).
+  - Evaporative cooling placement advice.
+  - Interactive troubleshooting accordion.
+
+---
+
+## [v0.3.0] - 2026-10-25
+
+### Changed
+- **Official Tagline & Narrative Anchor**:
+  - Main Tagline: *"Engineered for Purity, Powered by Nature."*
+  - The 3 Core Pillars: Zero Plastic, Off-the-Grid Purification, Natural Cooling.
+  - RUET Engineering heritage & Kumor artisan revival partnership.
+
+---
+
+## [v1.2.2] - 2026-10-25
+
+### Fixed
+- Bing Webmaster SEO guidelines for title and meta description length.
 
 ---
 
 ## [v1.2.1] - 2026-10-25
 
 ### Added
-- **Google Search Console Verification**:
-  - Added verification meta tag `B_cP4vwAkwH7hn3_0ETPNKvqYHKV02da65tg7kDuPWA` in `app/layout.tsx`.
-  - Added HTML verification file `public/googlef43b29a8ffd7300b.html` supporting both verification methods simultaneously.
-
-### Rollback Target
-- **Previous stable commit**: `28a605a`
-- **Rollback command**: `git revert HEAD` or `git reset --hard 28a605a`
+- Google Search Console verification meta tag and HTML verification file.
 
 ---
 
 ## [v1.2.0] - 2026-10-25
 
 ### Added
-- **SEO Robots Route** (`app/robots.ts`): Configured search bot crawling rules allowing full indexing and pointing to the canonical sitemap.
-- **Dynamic Sitemap Route** (`app/sitemap.ts`): Created sitemap generator for `https://www.aquivira.com` to assist Googlebot and Bingbot discovery.
-- **Rollback Tracking**: Initialized `CHANGELOG.md` with semantic versioning and commit hashes for incident rollback procedures.
-
-### Changed
-- **SEO & Search Favicon Resolution** (`app/layout.tsx`):
-  - Added `metadataBase: new URL("https://www.aquivira.com")` for absolute URL resolution required by Googlebot and Bingbot favicon crawlers.
-  - Added standard multi-size `/favicon.ico` (any size), `/icon-32x32.png`, and `/icon-192.png` to metadata icon arrays.
-  - Updated OpenGraph image dimensions to match the 1024x1024 official logo.
-- **README Documentation** (`README.md`): Added latest updates summary and deployment documentation.
-
-### Rollback Target
-- **Previous stable commit**: `774f71d`
-- **Rollback command**: `git revert HEAD` or `git reset --hard 774f71d`
+- `app/robots.ts` and `app/sitemap.ts` dynamic generators.
+- Canonical metadata resolution for Googlebot and Bingbot favicon discovery.
 
 ---
 
 ## [v1.1.0] - 2026-10-25
 
 ### Added
-- Multi-resolution icon set (`public/icon-16x16.png`, `public/icon-32x32.png`, `public/icon-192.png`, `public/icon-512.png`).
-- Embedded SVG icon (`public/icon.svg`) and PWA web app manifest icons (`public/manifest.json`).
-- Root fallback `favicon.ico` in both `public/` and `app/`.
-
-### Changed
-- **Official Brand Logo**: Replaced placeholder asset with official high-resolution AquiVira brand mark (`public/aquivira-logo.png`).
-- Replaced all legacy v0 / Vercel default tab icons across light/dark themes and mobile devices.
-
-### Git References
-- Commit `774f71d`: Update official AquiVira brand logo and generate comprehensive multi-resolution favicons
-- Commit `ba4f59d`: Replace default v0 favicon and app icons with AquiVira logo
+- Official AquiVira brand mark across multi-resolution favicons (`favicon.ico`, `icon-16x16`, `icon-32x32`, `icon-192`, `icon-512`, `apple-icon.png`).
 
 ---
 
 ## [v1.0.1] - 2026-10-25
 
 ### Changed
-- **Leadership Alignment** (`app/page.tsx`):
-  - Updated **Most. Mobassara Jannat** to Chief Executive Officer (CEO) across Team and Contact cards.
-  - Updated **Ashraf Islam Ashfaq** to Chief Operating Officer (COO) across Team and Contact cards.
-
-### Git References
-- Commit `332347a`: Update leadership roles: Mobassara Jannat as CEO and Ashraf Islam Ashfaq as COO
+- Leadership roles: Most. Mobassara Jannat as CEO and Ashraf Islam Ashfaq as COO.
 
 ---
 
 ## [v1.0.0] - Baseline Release
-
-### Features
-- Initial AquiVira landing page built with Next.js 16 (App Router) and Tailwind CSS.
-- Hero, Features, Product Showcase, Achievements, Interactive Photo Gallery with lightbox, FAQ accordion, Contact, and Pre-Order funnel.
+- Initial single-page landing site.
