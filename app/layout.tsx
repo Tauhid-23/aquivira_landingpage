@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { LanguageProvider } from "@/lib/i18n/LanguageContext"
 import "./globals.css"
 
 const _inter = Inter({ subsets: ["latin"] })
@@ -89,7 +90,9 @@ export default function RootLayout({
         <meta name="google-site-verification" content="B_cP4vwAkwH7hn3_0ETPNKvqYHKV02da65tg7kDuPWA" />
       </head>
       <body className={`font-sans antialiased`}>
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
         <Analytics />
       </body>
     </html>

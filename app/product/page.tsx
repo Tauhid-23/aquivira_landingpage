@@ -5,6 +5,8 @@ import Navbar from "@/components/global/Navbar"
 import Footer from "@/components/global/Footer"
 import { FILTER_LAYERS } from "@/lib/data/siteData"
 import { HELPLINE_PHONE, HELPLINE_PHONE_RAW } from "@/lib/data/checkoutData"
+import ArtisanKilnStamp from "@/components/artisan/ArtisanKilnStamp"
+import LabTestCertModal from "@/components/lab/LabTestCertModal"
 
 export const metadata: Metadata = {
   title: "The Science of Clay | AquiVira Water Purification Technology",
@@ -21,6 +23,9 @@ export default function ProductPage() {
         {/* Hero Header */}
         <section className="section-padding bg-gradient-to-b from-stone-50 to-white border-b border-border text-center">
           <div className="container-wide max-w-3xl">
+            <div className="flex justify-center mb-4">
+              <ArtisanKilnStamp variant="compact" />
+            </div>
             <span className="text-xs font-bold uppercase tracking-widest text-primary mb-3 block">
               Natural Gravity Engineering
             </span>
@@ -181,6 +186,10 @@ export default function ProductPage() {
                       <span>Daily Family Usage Standard</span>
                       <span>20+ Liters / day</span>
                     </div>
+                  </div>
+
+                  <div className="mt-6 pt-4 border-t border-border flex justify-end">
+                    <LabTestCertModal variant="button" />
                   </div>
                 </div>
               </div>

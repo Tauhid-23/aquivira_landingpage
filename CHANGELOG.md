@@ -7,6 +7,25 @@ Format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [3.0.0-alpha.1] - 2026-10-28
+
+### Added (v3.0.0 Phase 1: Sensory, Cultural & Authentic Polish)
+- **Instant Bilingual Localization Toggle (`EN` | `বাংলা`)**:
+  - Global language toggle in header and mobile drawer with zero-latency client state and `localStorage` persistence.
+  - Complete English & Bengali translation dictionaries for navigation, value propositions, product specs, and checkout.
+- **Sensory Audio Experience ("The Pour of Purity")**:
+  - Interactive acoustic stream component (`components/sensory/WaterPourAudio.tsx`) synthesizing the resonant sound of water flowing from a gravity tap into an earthen tumbler via Web Audio API.
+  - Animated soundwave equalizer bars, toggle controls, and accessible tooltip.
+- **Digital Artisan Kiln Stamp & Provenance Modal**:
+  - Interactive terracotta relief medallion (`components/artisan/ArtisanKilnStamp.tsx`) honoring Rajshahi Kumor potters.
+  - Interactive provenance modal showcasing 1000°C kiln firing proof, alluvial river silt purity, and non-toxic lead/cadmium-free certification.
+- **Verified Laboratory Test Certificate Modal**:
+  - Official test specification modal (`components/lab/LabTestCertModal.tsx`) summarizing RUET Ceramic & Metallurgical Engineering and BCSIR protocols with 1-click printable certificate.
+- **Bengali Terracotta Relief Dividers**:
+  - Subtle geometric SVG motif dividers (`components/ui/TerracottaDivider.tsx`) inspired by traditional Bangladeshi terracotta pottery art.
+
+---
+
 ## [2.0.1] - 2026-10-28
 
 ### Changed
