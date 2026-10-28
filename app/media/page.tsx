@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import Navbar from "@/components/global/Navbar"
 import Footer from "@/components/global/Footer"
-import PhotoGallery from "@/components/PhotoGallery"
+import MediaSlideshow from "@/components/media/MediaSlideshow"
 import SupportedBy from "@/components/global/SupportedBy"
 import { AWARDS } from "@/lib/data/siteData"
 
@@ -72,10 +72,8 @@ export default function MediaPage() {
           </div>
         </section>
 
-        {/* Full Lightbox Photo Gallery Component */}
-        <section className="border-t border-border">
-          <PhotoGallery />
-        </section>
+        {/* Interactive Media Slideshow & Photo Gallery */}
+        <MediaSlideshow />
       </main>
 
       <Footer />

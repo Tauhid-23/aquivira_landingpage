@@ -12,6 +12,9 @@ Format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Major Release - AquiVira 3.0 Production Rollout
 Complete interactive, sensory, and cultural transformation of the platform:
 - **Tier 1 (Sensory, Cultural & Authentic Polish)**:
+  - **Cinematic Interactive Media Slideshow & Photo Gallery**:
+    - Comprehensive media showcase (`components/media/MediaSlideshow.tsx`) featuring 16 authentic photos from the AquiVira collection across 6 categories (Awards & Accolades, Strategic Partners, Pitches & Summits, Community Impact, R&D & Engineering, Craft & Design).
+    - Equipped with 5-second autoplay and linear progress bar, interactive thumbnail filmstrip with auto-scroll centering, dual display modes (Cinematic Slideshow vs. Explorer Grid), full-screen lightbox modal, keyboard navigation, touch swipe support, and full bilingual (`EN` | `বাংলা`) titles and captions.
   - Instant client-side **Bilingual Localization Toggle (`EN` | `বাংলা`)** across navigation, hero, specifications, and checkout.
   - Interactive **Sensory Audio Experience ("The Pour of Purity")** synthesizing gravity water flow with animated soundwave visualizers.
   - **Digital Artisan Kiln Stamp & Provenance Modal** verifying 1000°C sintering, alluvial river silt sourcing, and fair-wage Kumor pottery impact.
