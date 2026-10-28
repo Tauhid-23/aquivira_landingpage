@@ -7,6 +7,28 @@ Format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [3.0.0] - 2026-10-28
+
+### Major Release - AquiVira 3.0 Production Rollout
+Complete interactive, sensory, and cultural transformation of the platform:
+- **Tier 1 (Sensory, Cultural & Authentic Polish)**:
+  - Instant client-side **Bilingual Localization Toggle (`EN` | `বাংলা`)** across navigation, hero, specifications, and checkout.
+  - Interactive **Sensory Audio Experience ("The Pour of Purity")** synthesizing gravity water flow with animated soundwave visualizers.
+  - **Digital Artisan Kiln Stamp & Provenance Modal** verifying 1000°C sintering, alluvial river silt sourcing, and fair-wage Kumor pottery impact.
+  - **Certified Laboratory Specification Sheet** modal & printable report (RUET Ceramic & Metallurgical Engineering + BCSIR).
+  - Traditional **Bengali Terracotta Relief Dividers** inspired by local pottery heritage.
+- **Tier 2 (Trust, Social Proof & Institutional Procurement)**:
+  - **Verified Customer Kitchen Stories & Reviews Carousel** with 4.9/5 star ratings from Dhaka, Rajshahi, and Sylhet.
+  - Real-Time **64-District Postal, Delivery & COD Checker** with instant transit estimates.
+  - **Corporate, School & NGO Bulk Order RFQ Wizard** with automated WhatsApp pro-forma dispatch.
+  - Interactive **5-Step Unboxing & Curing Ritual Walkthrough** on the care guide.
+- **Tier 3 (Interactive Physics & Engineering Simulators)**:
+  - **Thermodynamic Evaporative Cooling Simulator** calculating temperature drops (4°C–6°C below room temperature) and annual energy savings.
+  - **Regional Water Source & Contaminant Analyzer** comparing raw vs. filtered water across Dhaka WASA, Northern Groundwater, and Coastal Wells.
+  - **Household Consumption & Filter Life Forecaster** with automated WhatsApp refill reminder scheduling.
+
+---
+
 ## [3.0.0-alpha.2] - 2026-10-28
 
 ### Added (v3.0.0 Phase 2: Trust, Social Proof & Institutional Expansion)

@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Leaf, Zap, Shield, Heart, Droplet, ArrowRight } from "lucide-react"
 import Navbar from "@/components/global/Navbar"
 import Footer from "@/components/global/Footer"
+import ConsumptionForecaster from "@/components/interactive/ConsumptionForecaster"
 
 export default function ImpactPage() {
   const [familyMembers, setFamilyMembers] = useState(4)
@@ -108,6 +109,13 @@ export default function ImpactPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Interactive Household Consumption & Lifespan Forecaster */}
+        <section className="section-padding bg-stone-50 border-t border-border">
+          <div className="container-wide">
+            <ConsumptionForecaster />
           </div>
         </section>
 

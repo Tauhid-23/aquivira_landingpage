@@ -7,6 +7,8 @@ import { FILTER_LAYERS } from "@/lib/data/siteData"
 import { HELPLINE_PHONE, HELPLINE_PHONE_RAW } from "@/lib/data/checkoutData"
 import ArtisanKilnStamp from "@/components/artisan/ArtisanKilnStamp"
 import LabTestCertModal from "@/components/lab/LabTestCertModal"
+import CoolingSimulator from "@/components/interactive/CoolingSimulator"
+import WaterQualitySimulator from "@/components/interactive/WaterQualitySimulator"
 
 export const metadata: Metadata = {
   title: "The Science of Clay | AquiVira Water Purification Technology",
@@ -197,7 +199,21 @@ export default function ProductPage() {
           </div>
         </section>
 
-        {/* Section 4: Call to Action */}
+        {/* Section 4: Interactive Thermodynamic Cooling Simulator */}
+        <section className="section-padding bg-stone-50 border-t border-border">
+          <div className="container-wide">
+            <CoolingSimulator />
+          </div>
+        </section>
+
+        {/* Section 5: Regional Water Contaminant Analyzer */}
+        <section className="section-padding bg-white border-t border-border">
+          <div className="container-wide">
+            <WaterQualitySimulator />
+          </div>
+        </section>
+
+        {/* Section 6: Call to Action */}
         <section className="py-16 bg-secondary/50 border-t border-border text-center">
           <div className="container-wide max-w-2xl px-4">
             <h2 className="text-3xl font-bold mb-4">Experience Pure Water in Your Home</h2>
