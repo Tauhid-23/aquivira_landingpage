@@ -7,6 +7,42 @@ Format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [2.0.0] - 2026-10-28
+
+### Major Release - AquiVira 2.0
+Official production release marking the complete platform modernization, transition to active on-site purchasing, verified craftsmanship storytelling, and multi-page architecture.
+
+#### Added
+- **Active On-Site E-Commerce & Checkout Engine (`/order`)**:
+  - Live ordering system supporting Cash on Delivery (COD) across all 64 districts in Bangladesh.
+  - Interactive payment gateway mockups for mobile financial services (bKash & Nagad with TrxID validation) and debit/credit cards.
+  - Automatic order tracking code generation (`AQV-XXXXXX`) and 1-click WhatsApp order confirmation.
+  - Dedicated Corporate & Bulk Order routing to the official helpline.
+- **Authentic Product Showcase**:
+  - High-resolution studio photography of the handcrafted Rajshahi terracotta purifier (`/aquivira-authentic-purifier.jpg`) showcasing traditional Bengali architectural motifs (Curzon Hall / Lalbagh style), food-grade dispensing tap, and matching clay cup.
+  - Product thumbnail preview integrated into Step 1 of the checkout panel.
+- **Institutional Supporters & Partners Hub**:
+  - Official showcase of backing and acceleration by the Embassy of Switzerland in Bangladesh, WaterAid Bangladesh, Swisscontact, and B-Kash across Home, About, and Media pages.
+- **Press & Media Hub (`/media`)**:
+  - Dedicated press and media coverage page integrated into the main navigation and mobile menu.
+- **Comprehensive Multi-Page Experience**:
+  - `/product`: Interactive 3-layer exploded filter engineering, head-to-head RO comparison, evaporative cooling physics, and lab test spectrometry.
+  - `/about`: RUET engineering origin story, founding mission, and artisan partnership narrative.
+  - `/impact`: Interactive annual environmental & financial savings calculator.
+  - `/clay-care-guide`: Step-by-step unboxing, chemical-free maintenance, and placement guide.
+  - `/contact`: Official contact channels, leadership contact, and verified physical address.
+
+#### Changed
+- **Pricing & Filter Specification Synchronization**:
+  - Purifier: ৳9,999 BDT (31% discount from ৳14,499 BDT).
+  - Replacement Cartridge: ৳1,199 BDT (৳300 off from ৳1,499 BDT).
+  - Cartridge Longevity: Rated for 6,000+ Liters up to 8,000 Liters with routine care (~10 to 13 months at 20+ Liters/day family usage).
+  - Official Customer Helpline: `+8801330192882` across all touchpoints.
+- **Brand & Search Infrastructure**:
+  - Full multi-resolution favicon suite, verified Google Search Console meta tag & file, dynamic `robots.ts`, and `sitemap.ts`.
+
+---
+
 ## [v0.7.3] - 2026-10-25
 
 ### Changed
