@@ -7,6 +7,18 @@ Format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [2.0.1] - 2026-10-28
+
+### Changed
+- **Institutional Partner Sequence Alignment**:
+  - Reordered supporters grid from left to right across all touchpoints (Home, About, Media): **Embassy of Switzerland in Bangladesh**, **Swisscontact**, and **WaterAid Bangladesh**.
+- **Navigation Bar Restructuring**:
+  - Consolidated top navigation tabs into 5 primary destinations: **The Science**, **Our Impact**, **About Us**, **Media & Partners**, and **FAQ & Contact**.
+  - Added dedicated `#partners` anchor scroll targets on `/about` and `/media`.
+  - Streamlined horizontal navbar space by removing redundant "Shop" text link, keeping the prominent `Order Now — ৳9,999` CTA.
+
+---
+
 ## [2.0.0] - 2026-10-28
 
 ### Major Release - AquiVira 2.0

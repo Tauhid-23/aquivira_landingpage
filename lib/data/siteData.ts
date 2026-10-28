@@ -99,20 +99,20 @@ export const SUPPORTERS: Supporter[] = [
     description: "Supported by Switzerland through initiatives promoting sustainable water, environmental resilience, and green innovation.",
   },
   {
-    name: "WaterAid Bangladesh",
-    bengaliName: "ওয়াটারএইড বাংলাদেশ",
-    logo: "/partners/wateraid.png",
-    alt: "WaterAid - Water, Sanitation and Hygiene",
-    role: "WASH Innovation Partner",
-    description: "International NGO dedicated to transforming lives through universal access to safe water, sanitation, and hygiene.",
-  },
-  {
     name: "Swisscontact",
     bengaliName: "সুইসকনট্যাক্ট বাংলাদেশ",
     logo: "/partners/swisscontact.png",
     alt: "Swisscontact - Swiss Foundation for Technical Cooperation",
     role: "Enterprise & Technical Partner",
     description: "Swiss non-profit foundation championing sustainable private enterprise, inclusive economic growth, and green technology.",
+  },
+  {
+    name: "WaterAid Bangladesh",
+    bengaliName: "ওয়াটারএইড বাংলাদেশ",
+    logo: "/partners/wateraid.png",
+    alt: "WaterAid - Water, Sanitation and Hygiene",
+    role: "WASH Innovation Partner",
+    description: "International NGO dedicated to transforming lives through universal access to safe water, sanitation, and hygiene.",
   },
 ]
 
