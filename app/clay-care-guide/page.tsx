@@ -4,6 +4,7 @@ import { Droplet, Sparkles, AlertCircle, Check, Phone, ArrowRight } from "lucide
 import Navbar from "@/components/global/Navbar"
 import Footer from "@/components/global/Footer"
 import { HELPLINE_PHONE, HELPLINE_PHONE_RAW } from "@/lib/data/checkoutData"
+import UnboxingRitualGuide from "@/components/care/UnboxingRitualGuide"
 
 export const metadata: Metadata = {
   title: "Clay Care Guide | Maintenance, Curing & Optimization",
@@ -35,67 +36,7 @@ export default function ClayCareGuidePage() {
         {/* 5-Step Unboxing & Curing Ritual */}
         <section className="section-padding bg-white">
           <div className="container-wide max-w-4xl">
-            <div className="text-center mb-16">
-              <span className="text-xs font-bold uppercase tracking-wider text-primary mb-2 block">
-                First-Time Setup
-              </span>
-              <h2 className="text-3xl font-bold mb-4">The Initial Curing & Seasoning Ritual</h2>
-              <p className="text-muted-foreground text-sm">
-                Complete these simple steps when your double-boxed purifier first arrives.
-              </p>
-            </div>
-
-            <div className="space-y-6">
-              <div className="p-6 rounded-2xl bg-secondary/30 border border-border flex gap-4 items-start">
-                <span className="w-8 h-8 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
-                <div>
-                  <h3 className="font-bold text-base mb-1">Unpack & Inspect</h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    Carefully unbox your clay chambers and place them on a clean, level surface away from direct gas stove heat.
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-6 rounded-2xl bg-secondary/30 border border-border flex gap-4 items-start">
-                <span className="w-8 h-8 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
-                <div>
-                  <h3 className="font-bold text-base mb-1">Initial Fresh Water Rinse (Zero Soap)</h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    Rinse both clay chambers thoroughly with plain fresh water. <strong>Never use chemical detergents, dishwashing liquid, or bleach.</strong>
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-6 rounded-2xl bg-secondary/30 border border-border flex gap-4 items-start">
-                <span className="w-8 h-8 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
-                <div>
-                  <h3 className="font-bold text-base mb-1">Install the Multi-Layer Cartridge</h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    Insert the pre-installed cartridge into the upper chamber seating. Ensure the silicone washer sits flush against the clay base.
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-6 rounded-2xl bg-secondary/30 border border-border flex gap-4 items-start">
-                <span className="w-8 h-8 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
-                <div>
-                  <h3 className="font-bold text-base mb-1">The First Overnight Flush</h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    Fill the upper chamber completely with tap water and allow it to filter through overnight. Discard this first batch (or use it to water household plants). This hydrates the clay pores and activates the biosand and carbon.
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-6 rounded-2xl bg-emerald-50 border border-emerald-200 flex gap-4 items-start">
-                <span className="w-8 h-8 rounded-full bg-emerald-600 text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">5</span>
-                <div>
-                  <h3 className="font-bold text-base mb-1 text-emerald-950">Ready for Daily Pure Water</h3>
-                  <p className="text-xs text-emerald-800 leading-relaxed">
-                    Refill with fresh water. Your purifier is now primed to deliver 20+ Liters daily of crisp, naturally cool drinking water.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <UnboxingRitualGuide />
           </div>
         </section>
 

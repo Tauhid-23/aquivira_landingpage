@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Check, ShieldCheck, Truck, RefreshCw, Phone, MessageCircle, AlertCircle, Sparkles, CreditCard, Wallet, Banknote, Building2, Flame } from "lucide-react"
+import CorporateRfqModal from "@/components/b2b/CorporateRfqModal"
 import {
   MAIN_PRODUCT,
   EXTRA_CARTRIDGE_PRICE,
@@ -220,7 +221,7 @@ export default function CheckoutPanel() {
       <div className="mb-10 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-500/10 text-red-700 text-xs font-bold mb-4 border border-red-500/20">
           <Flame className="w-4 h-4 text-red-600" />
-          Limited Stock Available • 30% Off Launch Offer
+          Limited Stock Available • 31% Off Launch Offer (৳9,999)
         </div>
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
           Order Your AquiVira Clay Purifier
@@ -229,22 +230,15 @@ export default function CheckoutPanel() {
           Handcrafted in Rajshahi with multi-layer gravity filtration. Zero plastic, zero electricity, and naturally cool water.
         </p>
 
-        {/* Corporate Orders Note */}
-        <div className="mt-5 max-w-xl mx-auto p-3.5 bg-amber-50 border border-amber-200 rounded-2xl flex items-center justify-between text-xs text-amber-900 gap-3">
+        {/* Corporate Orders Note with Interactive RFQ Modal */}
+        <div className="mt-5 max-w-xl mx-auto p-3.5 bg-amber-50 border border-amber-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between text-xs text-amber-900 gap-3">
           <div className="flex items-center gap-2 text-left">
             <Building2 className="w-5 h-5 text-amber-700 flex-shrink-0" />
             <span>
-              <strong>Looking for Corporate or Bulk Orders?</strong> Connect directly via WhatsApp or Facebook for institutional pricing.
+              <strong>Looking for Corporate or Bulk Orders?</strong> Request official quotation or institutional pricing for offices & schools.
             </span>
           </div>
-          <a
-            href={`https://wa.me/${HELPLINE_WHATSAPP}?text=Hello%20AquiVira%20Team%2C%20I%20am%20inquiring%20about%20a%20Corporate%2FBulk%20Order.`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-3 py-1.5 bg-amber-600 hover:bg-amber-700 text-white rounded-lg font-bold flex-shrink-0 transition-colors"
-          >
-            Inquire
-          </a>
+          <CorporateRfqModal triggerClassName="px-3.5 py-1.5 bg-amber-600 hover:bg-amber-700 text-white rounded-lg font-bold flex-shrink-0 transition-colors text-xs" />
         </div>
       </div>
 

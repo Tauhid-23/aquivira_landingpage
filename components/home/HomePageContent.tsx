@@ -10,6 +10,9 @@ import WaterPourAudio from "@/components/sensory/WaterPourAudio"
 import ArtisanKilnStamp from "@/components/artisan/ArtisanKilnStamp"
 import LabTestCertModal from "@/components/lab/LabTestCertModal"
 import TerracottaDivider from "@/components/ui/TerracottaDivider"
+import CustomerReviews from "@/components/reviews/CustomerReviews"
+import DistrictDeliveryChecker from "@/components/delivery/DistrictDeliveryChecker"
+import CorporateRfqModal from "@/components/b2b/CorporateRfqModal"
 
 export default function HomePageContent() {
   const { t, language } = useLanguage()
@@ -275,7 +278,51 @@ export default function HomePageContent() {
         </div>
       </section>
 
-      {/* 5. FAQ Accordion Snippet */}
+      {/* 5. Verified Customer Reviews Carousel */}
+      <CustomerReviews />
+
+      <TerracottaDivider />
+
+      {/* 6. Real-Time 64-District Delivery & B2B Procurement Hub */}
+      <section className="section-padding bg-white">
+        <div className="container-wide">
+          <div className="grid lg:grid-cols-12 gap-8 items-stretch">
+            {/* Left: 64-District Delivery & COD Checker */}
+            <div className="lg:col-span-7">
+              <DistrictDeliveryChecker className="h-full" />
+            </div>
+
+            {/* Right: Corporate, School & NGO Bulk Orders */}
+            <div className="lg:col-span-5 rounded-3xl p-6 sm:p-8 bg-gradient-to-br from-stone-900 to-stone-800 text-white flex flex-col justify-between shadow-xl">
+              <div>
+                <span className="text-[10px] font-extrabold uppercase tracking-widest text-amber-400 bg-white/10 px-3 py-1 rounded-full inline-block mb-4">
+                  {language === "bn" ? "অফিস, শিক্ষা প্রতিষ্ঠান ও এনজিও" : "Offices, Schools & NGOs"}
+                </span>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3">
+                  {language === "bn" ? "কর্পোরেট ও প্রাতিষ্ঠানিক বাল্ক সলিউশন" : "Bulk Procurement & CSR Projects"}
+                </h3>
+                <p className="text-xs sm:text-sm text-stone-300 leading-relaxed mb-6">
+                  {language === "bn"
+                    ? "প্লাস্টিকের ২০ লিটার জারের নিয়মিত খরচ বন্ধ করুন। অফিস ও উন্নয়ন প্রকল্পের জন্য কাস্টম লোগো খোদাই ও সাশ্রয়ী মূল্যে বাল্ক অর্ডার সরবরাহ।"
+                    : "Replace recurring 20L plastic jars with sustainable, plastic-free clay purifiers. Custom laser etching & institutional maintenance SLAs."}
+                </p>
+              </div>
+
+              <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row gap-3">
+                <CorporateRfqModal triggerClassName="btn-primary !bg-amber-500 !text-stone-950 hover:!bg-amber-400 text-xs sm:text-sm !px-5 !py-3 flex-1 flex items-center justify-center font-bold shadow-md" />
+                <a
+                  href={`tel:${HELPLINE_PHONE_RAW}`}
+                  className="btn-secondary !bg-white/10 !text-white hover:!bg-white/20 text-xs sm:text-sm !px-4 !py-3 text-center border-white/20"
+                >
+                  {t("nav.helpline")}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. FAQ Accordion Snippet */}
       <section id="faq" className="section-padding bg-secondary/30">
         <div className="container-wide max-w-3xl">
           <div className="text-center mb-12">

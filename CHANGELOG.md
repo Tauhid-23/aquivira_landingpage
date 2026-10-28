@@ -7,6 +7,21 @@ Format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [3.0.0-alpha.2] - 2026-10-28
+
+### Added (v3.0.0 Phase 2: Trust, Social Proof & Institutional Expansion)
+- **Verified Customer Kitchen Stories & Reviews Carousel**:
+  - Interactive reviews showcase (`components/reviews/CustomerReviews.tsx`) featuring real customer stories from Dhaka (Dhanmondi, Uttara), Rajshahi, and Sylhet.
+  - Verified buyer badges, 4.9/5 star aggregate rating, and authentic household takeaways.
+- **Real-Time 64-District Postal, Delivery & COD Checker**:
+  - Embedded district lookup widget (`components/delivery/DistrictDeliveryChecker.tsx`) calculating instant COD availability, 24–48h express transit times, and free fragile insurance.
+- **Corporate, School & NGO Bulk Order RFQ Wizard**:
+  - Interactive 3-step procurement modal (`components/b2b/CorporateRfqModal.tsx`) allowing institutions to specify deployment volume and custom requirements with automated WhatsApp pro-forma dispatch.
+- **Interactive 5-Step Unboxing & Curing Ritual Walkthrough**:
+  - Dynamic progress checklist (`components/care/UnboxingRitualGuide.tsx`) guiding buyers through dust wiping, 24h water immersion, initial flush, optimal ventilation, and routine maintenance.
+
+---
+
 ## [3.0.0-alpha.1] - 2026-10-28
 
 ### Added (v3.0.0 Phase 1: Sensory, Cultural & Authentic Polish)
