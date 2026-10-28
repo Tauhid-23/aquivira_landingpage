@@ -15,7 +15,11 @@ Complete interactive, sensory, and cultural transformation of the platform:
   - Instant client-side **Bilingual Localization Toggle (`EN` | `বাংলা`)** across navigation, hero, specifications, and checkout.
   - Interactive **Sensory Audio Experience ("The Pour of Purity")** synthesizing gravity water flow with animated soundwave visualizers.
   - **Digital Artisan Kiln Stamp & Provenance Modal** verifying 1000°C sintering, alluvial river silt sourcing, and fair-wage Kumor pottery impact.
-  - **Certified Laboratory Specification Sheet** modal & printable report (RUET Ceramic & Metallurgical Engineering + BCSIR).
+  - **Certified icddr,b Laboratory Water Quality Reports**:
+  - Official test specification modal (`components/lab/LabTestCertModal.tsx`) with authentic test reports issued by the **Laboratory of Environmental Health, HSPSD, icddr,b (Mohakhali, Dhaka)** (Reports #2026042093 and #2026095130).
+  - Exact verified parameters: Total Coliforms: **0 CFU/100mL**, Arsenic: **< 1.0 ppb**, Iron: **< 0.1 mg/L**, Turbidity: **0.11 NTU**, and TDS: **160.7 mg/L**.
+  - Authorized signatory: **Dr. Zahid Hayat Mahmud**, Scientist and Head, Laboratory of Environmental Health.
+  - Interactive categorization tabs (All, Microbiological, Physical, Heavy Metals) and printable summary view.
   - Traditional **Bengali Terracotta Relief Dividers** inspired by local pottery heritage.
 - **Tier 2 (Trust, Social Proof & Institutional Procurement)**:
   - **Verified Customer Kitchen Stories & Reviews Carousel** with 4.9/5 star ratings from Dhaka, Rajshahi, and Sylhet.
@@ -56,8 +60,8 @@ Complete interactive, sensory, and cultural transformation of the platform:
 - **Digital Artisan Kiln Stamp & Provenance Modal**:
   - Interactive terracotta relief medallion (`components/artisan/ArtisanKilnStamp.tsx`) honoring Rajshahi Kumor potters.
   - Interactive provenance modal showcasing 1000°C kiln firing proof, alluvial river silt purity, and non-toxic lead/cadmium-free certification.
-- **Verified Laboratory Test Certificate Modal**:
-  - Official test specification modal (`components/lab/LabTestCertModal.tsx`) summarizing RUET Ceramic & Metallurgical Engineering and BCSIR protocols with 1-click printable certificate.
+- **Official icddr,b Laboratory Test Certificate Modal**:
+  - Official test specification modal (`components/lab/LabTestCertModal.tsx`) transcribing authentic reports from icddr,b Laboratory of Environmental Health (Reports #2026042093 and #2026095130) with 1-click printable certificate.
 - **Bengali Terracotta Relief Dividers**:
   - Subtle geometric SVG motif dividers (`components/ui/TerracottaDivider.tsx`) inspired by traditional Bangladeshi terracotta pottery art.
 

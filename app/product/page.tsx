@@ -164,29 +164,38 @@ export default function ProductPage() {
 
               <div className="lg:col-span-6">
                 <div className="p-8 rounded-3xl bg-secondary/40 border border-border">
-                  <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
-                    <Droplet className="w-5 h-5 text-primary" /> Verified Laboratory Metrics
-                  </h3>
+                  <div className="flex items-center justify-between gap-2 mb-4">
+                    <h3 className="font-bold text-lg flex items-center gap-2">
+                      <Droplet className="w-5 h-5 text-primary" /> icddr,b Certified Test Results
+                    </h3>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#E2136E] bg-rose-50 px-2.5 py-0.5 rounded-full border border-rose-200">
+                      icddr,b Verified
+                    </span>
+                  </div>
                   <div className="space-y-3 text-sm">
                     <div className="flex justify-between py-2 border-b border-border">
-                      <span className="text-stone-600">Heavy Metal Removal (Arsenic, Lead, Iron)</span>
-                      <span className="font-bold text-primary">~80%</span>
+                      <span className="text-stone-600">Total Coliforms (Microbial Pathogens)</span>
+                      <span className="font-bold text-emerald-600">0 CFU/100mL (100% Free)</span>
                     </div>
                     <div className="flex justify-between py-2 border-b border-border">
-                      <span className="text-stone-600">Microbial Pathogen Clearance (E. Coli, Cysts)</span>
-                      <span className="font-bold text-primary">~90%</span>
+                      <span className="text-stone-600">Arsenic (Toxic Heavy Metal)</span>
+                      <span className="font-bold text-emerald-600">&lt; 1.0 ppb (WHO Guideline: 10)</span>
                     </div>
                     <div className="flex justify-between py-2 border-b border-border">
-                      <span className="text-stone-600">Sediment & Turbidity Clarity</span>
-                      <span className="font-bold text-primary">99%</span>
+                      <span className="text-stone-600">Dissolved Iron</span>
+                      <span className="font-bold text-emerald-600">&lt; 0.1 mg/L (WHO Guideline: &lt;0.3)</span>
                     </div>
                     <div className="flex justify-between py-2 border-b border-border">
-                      <span className="text-stone-600">Cartridge Rated Lifespan</span>
-                      <span className="font-bold text-stone-900">6,000+ to 8,000 Liters</span>
+                      <span className="text-stone-600">Turbidity (Water Clarity)</span>
+                      <span className="font-bold text-emerald-600">0.11 NTU (WHO Limit: 5)</span>
+                    </div>
+                    <div className="flex justify-between py-2 border-b border-border">
+                      <span className="text-stone-600">Total Dissolved Solids (TDS)</span>
+                      <span className="font-bold text-stone-900">160.7 mg/L (Mineral-Rich)</span>
                     </div>
                     <div className="flex justify-between py-2 text-xs text-stone-500">
-                      <span>Daily Family Usage Standard</span>
-                      <span>20+ Liters / day</span>
+                      <span>Cartridge Rated Lifespan</span>
+                      <span>6,000+ to 8,000 Liters (20L/day)</span>
                     </div>
                   </div>
 

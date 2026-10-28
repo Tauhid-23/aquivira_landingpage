@@ -31,14 +31,14 @@ export const translations = {
     "stamp.close": "Close Provenance Details",
 
     // Lab Certifications
-    "lab.title": "Certified Laboratory Testing",
-    "lab.subtitle": "Independently tested by RUET Ceramic & Metallurgical Engineering and BCSIR protocols.",
-    "lab.heavyMetals": "Heavy Metal Reduction (Arsenic, Lead, Iron)",
-    "lab.pathogens": "Microbial Pathogen Clearance (E. Coli, Cysts)",
-    "lab.turbidity": "Sediment & Turbidity Removal",
-    "lab.minerals": "Essential Mineral Retention (Alkaline Ca/Mg)",
-    "lab.download": "Download Certified Lab Report (PDF)",
-    "lab.viewModal": "View Test Certificate",
+    "lab.title": "icddr,b Certified Water Quality Testing",
+    "lab.subtitle": "Officially tested by the Laboratory of Environmental Health, icddr,b (Mohakhali, Dhaka).",
+    "lab.heavyMetals": "Arsenic <1.0 ppb & Dissolved Iron <0.1 mg/L",
+    "lab.pathogens": "Total Coliforms: 0 CFU/100mL (Zero Contamination)",
+    "lab.turbidity": "Turbidity: 0.11 NTU (Crystal Clear)",
+    "lab.minerals": "Total Dissolved Solids: 160.7 mg/L (Balanced Alkaline Minerals)",
+    "lab.download": "View Official icddr,b Test Reports",
+    "lab.viewModal": "View icddr,b Test Reports",
 
     // Hero Section
     "hero.tagline": "Pure Water, Naturally",
@@ -120,14 +120,14 @@ export const translations = {
     "stamp.close": "বিবরণ বন্ধ করুন",
 
     // Lab Certifications
-    "lab.title": "ল্যাবরেটরি পরীক্ষিত ও প্রমাণিত",
-    "lab.subtitle": "রুয়েট (RUET) সিরামিক অ্যান্ড মেটালার্জিক্যাল ইঞ্জিনিয়ারিং ও বিসিএসআইআর (BCSIR) মানদণ্ডে পরীক্ষিত।",
-    "lab.heavyMetals": "ভারী ধাতু দূরীকরণ (আর্সেনিক, সিসা, আয়রন)",
-    "lab.pathogens": "জীবাণু ও ব্যাক্টেরিয়া ধ্বংস (ই. কোলাই, সিস্ট)",
-    "lab.turbidity": "ঘোলাটে ভাব ও পলি দূরীকরণ",
-    "lab.minerals": "প্রাকৃতিক খনিজের অক্ষুণ্ণতা (ক্ষারীয় Ca/Mg)",
-    "lab.download": "সার্টিফাইড ল্যাব রিপোর্ট ডাউনলোড করুন (PDF)",
-    "lab.viewModal": "পরীক্ষার সনদ দেখুন",
+    "lab.title": "আইসিডিডিআর,বি (icddr,b) সার্টিফাইড পানি পরীক্ষার রিপোর্ট",
+    "lab.subtitle": "আইসিডিডিআর,বি এনভায়রনমেন্টাল হেলথ ল্যাবরেটরি কর্তৃক আনুষ্ঠানিকভাবে পরীক্ষিত ও সনদপ্রাপ্ত।",
+    "lab.heavyMetals": "আর্সেনিক <১.০ পিপিবি ও দ্রবীভূত আয়রন <০.১ মিলিগ্রাম/লিটার",
+    "lab.pathogens": "টোটাল কলিফর্ম: ০ সিএফইউ/১০০মিলি (সম্পূর্ণ জীবাণুমুক্ত)",
+    "lab.turbidity": "টার্বিডিটি বা ঘোলাটে ভাব: ০.১১ এনটিইউ (শতভাগ স্বচ্ছ)",
+    "lab.minerals": "টিডিএস: ১৬০.৭ মিলিগ্রাম/লিটার (প্রাকৃতিক ক্ষারীয় খনিজ)",
+    "lab.download": "icddr,b পরীক্ষার রিপোর্ট দেখুন",
+    "lab.viewModal": "icddr,b টেস্ট রিপোর্ট দেখুন",
 
     // Hero Section
     "hero.tagline": "বিশুদ্ধ পানি, প্রকৃতির স্পর্শে",

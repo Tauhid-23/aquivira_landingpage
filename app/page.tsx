@@ -6,7 +6,7 @@ import HomePageContent from "@/components/home/HomePageContent"
 export const metadata: Metadata = {
   title: "AquiVira — Engineered for Purity, Powered by Nature",
   description:
-    "Experience crisp, cool, and safe drinking water with our 100% natural clay purifier. Zero plastic, zero electricity, removes 80% heavy metals and 90% microbes.",
+    "Experience crisp, cool, and safe drinking water with our 100% natural clay purifier. Zero plastic, zero electricity, icddr,b tested 0 coliforms, <1 ppb arsenic.",
 }
 
 export default function Home() {
