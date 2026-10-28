@@ -35,7 +35,8 @@ export default function Footer() {
             <li><Link href="/product" className={linkClass}>The Science of Clay</Link></li>
             <li><Link href="/impact" className={linkClass}>Our Impact</Link></li>
             <li><Link href="/about" className={linkClass}>About Us</Link></li>
-            <li><Link href="/media" className={linkClass}>Media & Awards</Link></li>
+            <li><Link href="/media" className={linkClass}>Media & Partners</Link></li>
+            <li><Link href="/about#partners" className={linkClass}>Institutional Backing</Link></li>
           </ul>
         </div>
 

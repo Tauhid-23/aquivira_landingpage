@@ -3,12 +3,11 @@
 export const TAGLINE = "Engineered for Purity, Powered by Nature."
 
 export const NAV_LINKS = [
-  { href: "/order", label: "Shop" },
-  { href: "/product", label: "The Science of Clay" },
+  { href: "/product", label: "The Science" },
   { href: "/impact", label: "Our Impact" },
   { href: "/about", label: "About Us" },
-  { href: "/media", label: "Media" },
-  { href: "/contact#faq", label: "FAQ" },
+  { href: "/media", label: "Media & Partners" },
+  { href: "/contact#faq", label: "FAQ & Contact" },
 ]
 
 export const LEADERSHIP_CONTACTS = [

@@ -61,7 +61,7 @@ export default function MediaPage() {
         </section>
 
         {/* Supported By Section */}
-        <section className="section-padding bg-stone-50 border-t border-border">
+        <section id="partners" className="section-padding bg-stone-50 border-t border-border scroll-mt-20">
           <div className="container-wide">
             <SupportedBy
               variant="light"

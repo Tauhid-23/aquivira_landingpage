@@ -46,7 +46,7 @@ export default function AboutPage() {
         </section>
 
         {/* Institutional Backing / Supported By Section */}
-        <section className="section-padding bg-stone-50/70 border-b border-border">
+        <section id="partners" className="section-padding bg-stone-50/70 border-b border-border scroll-mt-20">
           <div className="container-wide">
             <SupportedBy
               variant="light"

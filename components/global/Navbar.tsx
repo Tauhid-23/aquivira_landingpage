@@ -71,12 +71,20 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className={`text-sm font-medium py-3 px-2 rounded-lg hover:bg-secondary ${
-                isActive(link.href) ? "text-primary" : ""
+                isActive(link.href) ? "text-primary font-semibold" : ""
               }`}
             >
               {link.label}
             </Link>
           ))}
+          <Link
+            href="/clay-care-guide"
+            className={`text-sm font-medium py-3 px-2 rounded-lg hover:bg-secondary ${
+              pathname === "/clay-care-guide" ? "text-primary font-semibold" : ""
+            }`}
+          >
+            Clay Care Guide
+          </Link>
           <Link href="/order" className="btn-primary text-sm w-full mt-3">
             Order Now — ৳9,999
           </Link>
