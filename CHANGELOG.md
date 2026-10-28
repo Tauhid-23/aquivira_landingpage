@@ -13,7 +13,8 @@ Format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Complete interactive, sensory, and cultural transformation of the platform:
 - **Tier 1 (Sensory, Cultural & Authentic Polish)**:
   - **Cinematic Interactive Media Slideshow & Photo Gallery**:
-    - Comprehensive media showcase (`components/media/MediaSlideshow.tsx`) featuring 16 authentic photos from the AquiVira collection across 6 categories (Awards & Accolades, Strategic Partners, Pitches & Summits, Community Impact, R&D & Engineering, Craft & Design).
+    - Comprehensive media showcase (`components/media/MediaSlideshow.tsx`) featuring 16 authentic photos from the AquiVira collection across 5 categories (Awards & Honors, Strategic Partners, Pitches & Summits, R&D & Prototyping, Craft & Design).
+    - Forensic visual alignment of all photo captions and metadata to exact real-world events: BLUE Business Idea Competition Award Ceremony, Swisscontact Country Director crest handover, DEIED / Bangladesh Hi-Tech Park Authority executive consultations, Accelerating Bangladesh 2025 World Bank residential bootcamp at Sarah Resort, Simcubator Bangladesh Swiss cohort workshop, Environment Innovation Summit pavilion, working prototype incubator reviews, and Curzon Hall architectural folk art editions.
     - Equipped with 5-second autoplay and linear progress bar, interactive thumbnail filmstrip with auto-scroll centering, dual display modes (Cinematic Slideshow vs. Explorer Grid), full-screen lightbox modal, keyboard navigation, touch swipe support, and full bilingual (`EN` | `বাংলা`) titles and captions.
   - Instant client-side **Bilingual Localization Toggle (`EN` | `বাংলা`)** across navigation, hero, specifications, and checkout.
   - Interactive **Sensory Audio Experience ("The Pour of Purity")** synthesizing gravity water flow with animated soundwave visualizers.

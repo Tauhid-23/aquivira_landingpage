@@ -13,7 +13,6 @@ import {
   Award,
   Users,
   Mic,
-  Heart,
   Cpu,
   Sparkles,
   MapPin,
@@ -22,7 +21,7 @@ import {
 } from "lucide-react"
 import { useLanguage } from "@/lib/i18n/LanguageContext"
 
-export type MediaCategory = "all" | "awards" | "partners" | "summits" | "community" | "rnd" | "craft"
+export type MediaCategory = "all" | "awards" | "partners" | "summits" | "rnd" | "craft"
 
 export interface MediaSlide {
   id: string
@@ -30,7 +29,7 @@ export interface MediaSlide {
   alt: string
   title: string
   titleBn: string
-  category: "awards" | "partners" | "summits" | "community" | "rnd" | "craft"
+  category: "awards" | "partners" | "summits" | "rnd" | "craft"
   categoryLabel: string
   categoryLabelBn: string
   location: string
@@ -44,58 +43,153 @@ export interface MediaSlide {
 
 export const MEDIA_SLIDES: MediaSlide[] = [
   {
-    id: "blue-award",
+    id: "blue-award-stage",
     src: "/Photos/Blue Award receiving.JPG",
-    alt: "Blue Business Idea Competition Award Ceremony",
-    title: "Blue Business Idea Competition Winner",
-    titleBn: "ব্লু বিজনেস আইডিয়া প্রতিযোগিতায় বিজয়ী সম্মাননা",
+    alt: "AquiVira founders receiving the Blue Business Idea Competition Award",
+    title: "BLUE Business Idea Competition Championship",
+    titleBn: "ব্লু বিজনেস আইডিয়া প্রতিযোগিতায় চ্যাম্পিয়ন সম্মাননা গ্রহণ",
     category: "awards",
-    categoryLabel: "Awards & Accolades",
+    categoryLabel: "Awards & Honors",
     categoryLabelBn: "পুরস্কার ও সম্মাননা",
-    location: "Dhaka, Bangladesh",
-    locationBn: "ঢাকা, বাংলাদেশ",
+    location: "Grand Auditorium Stage, Dhaka",
+    locationBn: "গ্র্যান্ড অডিটোরিয়াম মঞ্চ, ঢাকা",
     caption:
-      "AquiVira founding team honored on stage for innovative eco-friendly water filtration technology, recognized for high social impact potential.",
+      "AquiVira co-founders on stage receiving the prestigious winner crest at the 'BLUE uplifting you Business Idea Competition' Awarding Ceremony, backed by WaterAid and international partners.",
     captionBn:
-      "পরিবেশবান্ধব ও টেকসই পানি ফিল্টারিং প্রযুক্তির স্বীকৃতিস্বরূপ ব্লু বিজনেস আইডিয়া প্রতিযোগিতার প্রধান মঞ্চে সম্মাননা গ্রহণ।",
+      "ওয়াটারএইড ও উন্নয়ন সহযোগী সংস্থাগুলোর উদ্যোগে আয়োজিত 'ব্লু বিজনেস আইডিয়া কম্পিটিশন'-এর মূল মঞ্চে একিভিরার সহ-প্রতিষ্ঠাতাগণের চ্যাম্পিয়ন সম্মাননা ক্রেস্ট গ্রহণ।",
     dateOrYear: "2025",
     dateOrYearBn: "২০২৫",
     accentColor: "from-amber-500/20 to-amber-600/10 text-amber-600 border-amber-300",
   },
   {
-    id: "swisscontact-director",
-    src: "/Photos/SwissContact Country Director.JPG",
-    alt: "Meeting with SwissContact Country Director",
-    title: "Executive Strategic Session with Swisscontact",
-    titleBn: "সুইসকনট্যাক্ট কান্ট্রি ডিরেক্টরের সাথে কৌশলগত বৈঠক",
-    category: "partners",
-    categoryLabel: "Global Partnerships",
-    categoryLabelBn: "আন্তর্জাতিক পার্টনারশিপ",
-    location: "Swisscontact Bangladesh HQ",
-    locationBn: "সুইসকনট্যাক্ট বাংলাদেশ কার্যালয়",
+    id: "mta-award-handover",
+    src: "/Photos/MTA07523-EDIT.jpg",
+    alt: "Handover moment of the BLUE Business Idea Competition Award",
+    title: "Award Handover by Swisscontact Country Director",
+    titleBn: "সুইসকনট্যাক্ট কান্ট্রি ডিরেক্টরের হাত থেকে পুরস্কার গ্রহণ",
+    category: "awards",
+    categoryLabel: "Awards & Honors",
+    categoryLabelBn: "পুরস্কার ও সম্মাননা",
+    location: "BLUE Award Ceremony Stage, Dhaka",
+    locationBn: "ব্লু অ্যাওয়ার্ড সিরিমোনি মঞ্চ, ঢাকা",
     caption:
-      "Strategic engagement discussing rural water security, enterprise scaling, and decentralized clean tech deployment across Bangladesh.",
+      "The official crest presentation moment: Country Director of Swisscontact Bangladesh handing over the BLUE Business Idea Competition Award to the AquiVira founders.",
     captionBn:
-      "সুইসকনট্যাক্ট বাংলাদেশ-এর কান্ট্রি ডিরেক্টরের সাথে গ্রামীণ নিরাপদ পানির বিস্তার ও ব্যবসায়িক টেকসই রূপরেখা নিয়ে আলোচনা।",
+      "ব্লু বিজনেস আইডিয়া প্রতিযোগিতার মূল মঞ্চে একিভিরার সহ-প্রতিষ্ঠাতাদের হাতে বিজয়ী স্মারক ক্রেস্ট তুলে দিচ্ছেন সুইসকনট্যাক্ট বাংলাদেশের কান্ট্রি ডিরেক্টর।",
+    dateOrYear: "2025",
+    dateOrYearBn: "২০২৫",
+    accentColor: "from-amber-500/20 to-amber-600/10 text-amber-600 border-amber-300",
+  },
+  {
+    id: "swisscontact-director-reception",
+    src: "/Photos/SwissContact Country Director.JPG",
+    alt: "AquiVira founders with Swisscontact Country Director holding the award",
+    title: "Celebrating Victory with Swisscontact Leadership",
+    titleBn: "সুইসকনট্যাক্ট কান্ট্রি ডিরেক্টরের সাথে সম্মাননা উদযাপন",
+    category: "partners",
+    categoryLabel: "Strategic Partners",
+    categoryLabelBn: "আন্তর্জাতিক ও সরকারি পার্টনার",
+    location: "Award Reception Hall, Dhaka",
+    locationBn: "অ্যাওয়ার্ড সংবর্ধনা হল, ঢাকা",
+    caption:
+      "AquiVira founders holding the BLUE Business Idea Competition crest with the Country Director of Swisscontact Bangladesh in recognition of building a sustainable, community-centered green enterprise.",
+    captionBn:
+      "টেকসই পরিবেশবান্ধব ব্যবসা মডেল গড়ে তোলার স্বীকৃতি হিসেবে পাওয়া ব্লু বিজনেস আইডিয়া অ্যাওয়ার্ড ক্রেস্টটি সুইসকনট্যাক্ট বাংলাদেশ-এর কান্ট্রি ডিরেক্টরের সাথে প্রদর্শন করছেন প্রতিষ্ঠাতাদ্বয়।",
     dateOrYear: "2025",
     dateOrYearBn: "২০২৫",
     accentColor: "from-blue-500/20 to-blue-600/10 text-blue-600 border-blue-300",
   },
   {
+    id: "blue-award-organizers",
+    src: "/Photos/Extra.JPG",
+    alt: "AquiVira founders on stage with BLUE competition program leads",
+    title: "Celebrating with BLUE Program Leadership",
+    titleBn: "ব্লু বিজনেস কম্পিটিশন আয়োজক নেতৃত্বের সাথে জয় উদযাপন",
+    category: "awards",
+    categoryLabel: "Awards & Honors",
+    categoryLabelBn: "পুরস্কার ও সম্মাননা",
+    location: "BLUE Award Gala Stage, Dhaka",
+    locationBn: "ব্লু অ্যাওয়ার্ড গালা স্টেজ, ঢাকা",
+    caption:
+      "AquiVira co-founders celebrating their award on stage with the BLUE initiative organizing leadership, supported by Switzerland, Swisscontact, and WaterAid.",
+    captionBn:
+      "সুইজারল্যান্ড দূতাবাস, সুইসকনট্যাক্ট ও ওয়াটারএইডের সহায়তায় আয়োজিত ব্লু বিজনেস আইডিয়া প্রতিযোগিতার সমাপনী মঞ্চে আয়োজকদের সাথে বিজয়ের আনন্দ উদযাপন।",
+    dateOrYear: "2025",
+    dateOrYearBn: "২০২৫",
+    accentColor: "from-amber-500/20 to-amber-600/10 text-amber-600 border-amber-300",
+  },
+  {
+    id: "accelerating-bd-award",
+    src: "/Photos/DSC09789.jpg",
+    alt: "Receiving Accelerating Bangladesh 2025 award at Sarah Resort",
+    title: "Accelerating Bangladesh 2025 Cohort Honor",
+    titleBn: "অ্যাক্সিলারেটিং বাংলাদেশ ২০২৫ আবাসিক বুট ক্যাম্প সম্মাননা",
+    category: "awards",
+    categoryLabel: "Awards & Honors",
+    categoryLabelBn: "পুরস্কার ও সম্মাননা",
+    location: "Sarah Resort, Gazipur",
+    locationBn: "সারাহ রিসোর্ট, গাজীপুর",
+    caption:
+      "AquiVira co-founder receiving the Accelerating Bangladesh 2025 Crest on the red carpet from dignitaries of the World Bank, ICT Division, Bangladesh Hi-Tech Park Authority, and Startupbootcamp.",
+    captionBn:
+      "বিশ্বব্যাংক, তথ্য ও যোগাযোগ প্রযুক্তি বিভাগ, বাংলাদেশ হাই-টেক পার্ক কর্তৃপক্ষ ও স্টার্টআপবুটক্যাম্প কর্তৃক আয়োজিত অ্যাক্সিলারেটিং বাংলাদেশ ২০২৫ আবাসিক বুট ক্যাম্পে সম্মাননা ক্রেস্ট গ্রহণ।",
+    dateOrYear: "2025",
+    dateOrYearBn: "২০২৫",
+    accentColor: "from-amber-500/20 to-amber-600/10 text-amber-600 border-amber-300",
+  },
+  {
+    id: "accelerating-bd-mentor",
+    src: "/Photos/IMG20250927172423.jpg",
+    alt: "AquiVira co-founders with lead accelerator mentor at Sarah Resort",
+    title: "Red Carpet Milestone with Lead Mentor",
+    titleBn: "প্রধান মেন্টরের সাথে অ্যাক্সিলারেটিং বাংলাদেশ উদযাপন",
+    category: "awards",
+    categoryLabel: "Awards & Honors",
+    categoryLabelBn: "পুরস্কার ও সম্মাননা",
+    location: "Sarah Resort, Gazipur (Sept 27, 2025)",
+    locationBn: "সারাহ রিসোর্ট, গাজীপুর (২৭ সেপ্টেম্বর, ২০২৫)",
+    caption:
+      "AquiVira co-founders holding the Accelerating Bangladesh winner crest on the red carpet with their program lead mentor, celebrating graduation from the World Bank and BHTPA incubation initiative.",
+    captionBn:
+      "বিশ্বব্যাংক ও বাংলাদেশ হাই-টেক পার্ক কর্তৃপক্ষের অ্যাক্সিলারেটিং বাংলাদেশ বুট ক্যাম্পে সফল সমাপনী শেষে প্রধান মেন্টরের সাথে রেড কার্পেটে স্মারক ক্রেস্ট হাতে একিভিরার সহ-প্রতিষ্ঠাতাদ্বয়।",
+    dateOrYear: "2025",
+    dateOrYearBn: "২০২৫",
+    accentColor: "from-amber-500/20 to-amber-600/10 text-amber-600 border-amber-300",
+  },
+  {
+    id: "accelerating-bd-cohort",
+    src: "/Photos/DSC09742.jpg",
+    alt: "Accelerating Bangladesh 2025 official cohort group photo",
+    title: "Accelerating Bangladesh 2025 Official Cohort",
+    titleBn: "অ্যাক্সিলারেটিং বাংলাদেশ ২০২৫ অফিসিয়াল কোহর্ট",
+    category: "summits",
+    categoryLabel: "Pitches & Summits",
+    categoryLabelBn: "পিচিং ও সামিট",
+    location: "Sarah Resort, Gazipur",
+    locationBn: "সারাহ রিসোর্ট, গাজীপুর",
+    caption:
+      "AquiVira founders standing with fellow pioneering entrepreneurs and esteemed dignitaries of the World Bank, ICT Division, DEIED, and Bangladesh Hi-Tech Park Authority.",
+    captionBn:
+      "বিশ্বব্যাংক, আইসিটি বিভাগ এবং বাংলাদেশ হাই-টেক পার্ক কর্তৃপক্ষের শীর্ষ কর্মকর্তাদের সাথে অ্যাক্সিলারেটিং বাংলাদেশ ২০২৫-এর গ্র্যাজুয়েট উদ্যোক্তাদের স্মারক ছবি।",
+    dateOrYear: "2025",
+    dateOrYearBn: "২০২৫",
+    accentColor: "from-purple-500/20 to-purple-600/10 text-purple-600 border-purple-300",
+  },
+  {
     id: "with-deied-pd",
     src: "/Photos/With DEIED PD.JPG",
-    alt: "With DEIED Program Director",
-    title: "Institutional Consultation with DEIED Leadership",
-    titleBn: "ডিইআইইডি প্রকল্প পরিচালকের সাথে প্রাতিষ্ঠানিক আলোচনা",
+    alt: "AquiVira founders with DEIED Project Director Mohammad Shahriar",
+    title: "Executive Office Visit with DEIED Project Director",
+    titleBn: "ডিইআইইডি প্রকল্প পরিচালকের কার্যালয়ে মতবিনিময়",
     category: "partners",
-    categoryLabel: "Government & Development",
-    categoryLabelBn: "সরকারি ও উন্নয়ন সহযোগিতা",
-    location: "Department of Environment & Innovation",
-    locationBn: "পরিবেশ ও উদ্ভাবন বিভাগ",
+    categoryLabel: "Strategic Partners",
+    categoryLabelBn: "আন্তর্জাতিক ও সরকারি পার্টনার",
+    location: "Bangladesh Hi-Tech Park Authority, ICT Tower, Dhaka",
+    locationBn: "বাংলাদেশ হাই-টেক পার্ক কর্তৃপক্ষ, আইসিটি টাওয়ার, ঢাকা",
     caption:
-      "Demonstrating indigenous clay micro-filtration and national water standards to the Project Director of DEIED.",
+      "AquiVira founders presenting their national award and clay nanotechnology progress in a special consultative meeting with Mohammad Shahriar, Project Director of DEIED (Digital Entrepreneurship and Innovation Eco-System Development Project, BHTPA).",
     captionBn:
-      "ডিইআইইডি (DEIED) প্রকল্প পরিচালকের কাছে একিভিরার দেশীয় মাটির ফিল্টারিং প্রযুক্তি এবং কমিউনিটি মডেল উপস্থাপন।",
+      "বাংলাদেশ হাই-টেক পার্ক কর্তৃপক্ষের ডিইআইইডি প্রকল্পের প্রকল্প পরিচালক জনাব মোহাম্মদ শাহরিয়ারের দপ্তরে একিভিরার উদ্ভাবন ও প্রযুক্তিগত অগ্রগতি নিয়ে বিশেষ সৌজন্য সাক্ষাৎ।",
     dateOrYear: "2025",
     dateOrYearBn: "২০২৫",
     accentColor: "from-sky-500/20 to-sky-600/10 text-sky-600 border-sky-300",
@@ -103,249 +197,154 @@ export const MEDIA_SLIDES: MediaSlide[] = [
   {
     id: "deied-pd-session",
     src: "/Photos/DEIED PD.JPG",
-    alt: "DEIED Program Director official session",
-    title: "WASH Standards & Acceleration Review",
-    titleBn: "ডিইআইইডি নেতৃত্বের সাথে প্রযুক্তিগত পর্যালোচনা",
+    alt: "Formal felicitation at Bangladesh Hi-Tech Park Authority",
+    title: "Official Recognition at Bangladesh Hi-Tech Park Authority",
+    titleBn: "বাংলাদেশ হাই-টেক পার্ক কর্তৃপক্ষে আনুষ্ঠানিক সংবর্ধনা",
     category: "partners",
-    categoryLabel: "Government & Development",
-    categoryLabelBn: "সরকারি ও উন্নয়ন সহযোগিতা",
-    location: "Innovation Summit Hub",
-    locationBn: "ইনোভেশন সামিট হাব",
+    categoryLabel: "Strategic Partners",
+    categoryLabelBn: "আন্তর্জাতিক ও সরকারি পার্টনার",
+    location: "BHTPA / ICT Division, Agargaon, Dhaka",
+    locationBn: "বিএইচটিপিএ / আইসিটি বিভাগ, আগারগাঁও, ঢাকা",
     caption:
-      "Deep dive into clean water testing protocols, heavy-metal removal efficacy, and institutional pilot support.",
+      "Formal handover and review session with DEIED Project Director Mohammad Shahriar, validating AquiVira's alignment with national green technology and University Innovation Hub Program (UIHP) mandates.",
     captionBn:
-      "পানির গুণগত মান, আর্সেনিক দূরীকরণ সক্ষমতা এবং সরকারি ইনকিউবেশন সহায়তার ওপর বিস্তারিত পর্যালোচনা।",
+      "বাংলাদেশ হাই-টেক পার্ক কর্তৃপক্ষ কার্যালয়ে ডিইআইইডি প্রকল্প পরিচালকের সাথে আনুষ্ঠানিক বৈঠক ও একিভিরার উদ্ভাবনী ওয়াটার পিউরিফায়ার প্রকল্পের প্রাতিষ্ঠানিক পর্যালোচনা।",
     dateOrYear: "2025",
     dateOrYearBn: "২০২৫",
     accentColor: "from-sky-500/20 to-sky-600/10 text-sky-600 border-sky-300",
   },
   {
-    id: "pitching-session-1",
+    id: "simcubator-swiss",
+    src: "/Photos/IMG_4768.JPG",
+    alt: "AquiVira team with Swiss delegates at Simcubator Bangladesh workshop",
+    title: "Simcubator Bangladesh Swiss Innovation Cohort",
+    titleBn: "সিমকিউবেটর বাংলাদেশ সুইস ইনোভেশন কোহর্ট",
+    category: "partners",
+    categoryLabel: "Strategic Partners",
+    categoryLabelBn: "আন্তর্জাতিক ও সরকারি পার্টনার",
+    location: "SELISE Digital Platforms / Simcubator Hub, Dhaka",
+    locationBn: "সেলিস ডিজিটাল প্ল্যাটফর্মস / সিমকিউবেটর হাব, ঢাকা",
+    caption:
+      "AquiVira delegates collaborating with international mentors and Swiss innovation leaders during the Simcubator Bangladesh incubation workshop powered by SELISE.",
+    captionBn:
+      "সুইস ডিজিটাল প্ল্যাটফর্ম প্রতিষ্ঠান 'সেলিস' (SELISE) ও সিমকিউবেটর বাংলাদেশের উচ্চপর্যায়ের উদ্ভাবন কর্মশালায় আন্তর্জাতিক মেন্টরদের সাথে একিভিরা দল।",
+    dateOrYear: "2025",
+    dateOrYearBn: "২০২৫",
+    accentColor: "from-blue-500/20 to-blue-600/10 text-blue-600 border-blue-300",
+  },
+  {
+    id: "pitching-snippets-1",
     src: "/Photos/Pitching snippets 1.jpg",
-    alt: "Pitching presentation session 1",
-    title: "National Startup Pitch Stage",
-    titleBn: "জাতীয় স্টার্টআপ পিচিং সেশন",
+    alt: "AquiVira founders presenting the problem statement to evaluation committee",
+    title: "Residential Boot Camp Pitch to Evaluation Panel",
+    titleBn: "আবাসিক বুট ক্যাম্পে বিচারকদের সামনে সমস্যা ও সমাধান উপস্থাপন",
     category: "summits",
     categoryLabel: "Pitches & Summits",
     categoryLabelBn: "পিচিং ও সামিট",
-    location: "National Innovation Stage, Dhaka",
-    locationBn: "জাতীয় উদ্ভাবন মঞ্চ, ঢাকা",
+    location: "BLUE Residential Boot Camp, Gazipur",
+    locationBn: "ব্লু আবাসিক বুট ক্যাম্প, গাজীপুর",
     caption:
-      "Articulating AquiVira's vision to eliminate single-use plastic water jars through generational clay engineering to investors and judges.",
+      "AquiVira founders pitching the problem statement—arsenic contamination affecting 35M+ people and toxic plastic filters—before the official evaluation committee at the BLUE Business Idea Competition Residential Boot Camp.",
     captionBn:
-      "বিনিয়োগকারী ও বিচারকমণ্ডলীর সামনে মাটির ফিল্টারের মাধ্যমে প্লাস্টিক জারমুক্ত বাংলাদেশের রূপরেখা তুলে ধরা।",
+      "ব্লু বিজনেস আইডিয়া প্রতিযোগিতার আবাসিক বুট ক্যাম্পে বিচারকমণ্ডলীর সামনে দেশের ৩৫ মিলিয়নের অধিক মানুষের আর্সেনিক ঝুঁকি এবং প্লাস্টিক ফিল্টারের বিকল্প হিসেবে মাটির প্রযুক্তির উপস্থাপন।",
     dateOrYear: "2025",
     dateOrYearBn: "২০২৫",
     accentColor: "from-purple-500/20 to-purple-600/10 text-purple-600 border-purple-300",
   },
   {
-    id: "pitching-session-2",
+    id: "pitching-snippets-2",
     src: "/Photos/Pitching snippets 2.jpg",
-    alt: "Pitching presentation session 2",
-    title: "Live Thermodynamic Filtration Mechanism",
-    titleBn: "থার্মোডাইনামিক শীতলীকরণ পদ্ধতির সরাসরি উপস্থাপন",
+    alt: "AquiVira co-founders presenting on the grand auditorium stage",
+    title: "Keynote Stage Presentation of Clay Architecture",
+    titleBn: "গ্র্যান্ড অডিটোরিয়াম মঞ্চে একিভিরার লাইভ উপস্থাপনা",
     category: "summits",
     categoryLabel: "Pitches & Summits",
     categoryLabelBn: "পিচিং ও সামিট",
-    location: "Startup Pitch Auditorium",
-    locationBn: "স্টার্টআপ পিচ অডিটোরিয়াম",
+    location: "BLUE Award Ceremony Stage, Dhaka",
+    locationBn: "ব্লু অ্যাওয়ার্ড সিরিমোনি মঞ্চ, ঢাকা",
     caption:
-      "Illustrating how evaporative micro-pores achieve natural cooling 4°C–6°C below ambient room temperature without a watt of electricity.",
+      "Presenting AquiVira's terracotta filtration architecture and handcrafted artistic edition on the giant auditorium screen during the BLUE Business Idea Competition Award Ceremony.",
     captionBn:
-      "বিদ্যুৎবিহীনভাবে পানিকে প্রাকৃতিকভাবে ৪°–৬° সেলসিয়াস শীতল রাখার অনন্য বৈজ্ঞানিক কলাকৌশল উপস্থাপন।",
+      "ব্লু বিজনেস আইডিয়া অ্যাওয়ার্ড সিরিমোনির মূল মঞ্চে সুবিশাল ডিজিটাল স্ক্রিনে একিভিরার নান্দনিক মাটির ফিল্টারের নকশা ও কার্যকারিতা নিয়ে বক্তব্য রাখছেন সহ-প্রতিষ্ঠাতাদ্বয়।",
     dateOrYear: "2025",
     dateOrYearBn: "২০২৫",
     accentColor: "from-purple-500/20 to-purple-600/10 text-purple-600 border-purple-300",
   },
   {
-    id: "product-stall",
+    id: "greenovation-stall",
     src: "/Photos/Product showcasing stall.JPG",
-    alt: "Product showcase at exhibition stall",
-    title: "AquiVira Exhibition Pavilion & Public Tasting",
-    titleBn: "একিভিরা প্রদর্শনী প্যাভিলিয়ন ও স্টল",
+    alt: "AquiVira exhibition stall at Environment Innovation Summit",
+    title: "Environment Innovation Summit 2025 Pavilion",
+    titleBn: "এনভায়রনমেন্ট ইনোভেশন সামিট ২০২৫-এ প্রদর্শনী স্টল",
     category: "summits",
     categoryLabel: "Exhibitions & Stalls",
     categoryLabelBn: "প্রদর্শনী ও মেলা",
-    location: "National Green Innovation Expo",
-    locationBn: "জাতীয় সবুজ উদ্ভাবন মেলা",
+    location: "Environment Innovation Summit & Awards 2025",
+    locationBn: "এনভায়রনমেন্ট ইনোভেশন সামিট ও অ্যাওয়ার্ডস ২০২৫",
     caption:
-      "Showcasing functional clay water purifier units, raw terracotta prototypes, and drinking tumblers to hundreds of summit attendees.",
+      "Demonstrating the raw terracotta cooling pot and earthenware drinking tumbler to summit visitors and evaluation panelists at the Environment Innovation Summit & Awards 2025.",
     captionBn:
-      "সবুজ উদ্ভাবন মেলায় আগত দর্শনার্থীদের সামনে একিভিরার মাটির ফিল্টার এবং পোড়ামাটির গ্লাস প্রদর্শন।",
+      "এনভায়রনমেন্ট ইনোভেশন সামিট ২০২৫-এর মেলা প্রাঙ্গণে দর্শনার্থী ও প্রযুক্তিপ্রেমীদের কাছে পোড়ামাটির ফিল্টারের প্রাকৃতিক শীতলকরণ ও খনিজ ধারণ ক্ষমতার সরাসরি প্রদর্শন।",
     dateOrYear: "2025",
     dateOrYearBn: "২০২৫",
     accentColor: "from-purple-500/20 to-purple-600/10 text-purple-600 border-purple-300",
   },
   {
-    id: "community-testing",
+    id: "prototype-mentor-review",
     src: "/Photos/AquiVira in Community.jpg",
-    alt: "AquiVira community engagement and testing",
-    title: "Grassroots Field Testing & Household Feedback",
-    titleBn: "মাঠপর্যায়ে কমিউনিটি যাচাই ও পরিবারের মতামত",
-    category: "community",
-    categoryLabel: "Community & Impact",
-    categoryLabelBn: "কমিউনিটি ও মাঠপর্যায়ের প্রভাব",
-    location: "Grassroots Field Testing, Rajshahi",
-    locationBn: "রাজশাহী ফিল্ড টেস্ট এরিয়া",
-    caption:
-      "Deploying prototype units directly into households to collect family feedback on taste, cooling efficiency, and daily 20L flow rate.",
-    captionBn:
-      "গ্রামীণ পরিবারের মাঝে সরাসরি ফিল্টার স্থাপন করে পানির স্বাদ, প্রাকৃতিক শীতলতা ও প্রবাহের প্রত্যক্ষ প্রতিক্রিয়া গ্রহণ।",
-    dateOrYear: "2025",
-    dateOrYearBn: "২০২৫",
-    accentColor: "from-emerald-500/20 to-emerald-600/10 text-emerald-600 border-emerald-300",
-  },
-  {
-    id: "rnd-porosity",
-    src: "/Photos/DSC09789.jpg",
-    alt: "Product testing and porosity development",
-    title: "Porosity Calibration & Flow Benchmarking",
-    titleBn: "ল্যাবরেটরি পোরোসিটি ও প্রবাহ পরীক্ষা",
+    alt: "Demonstrating the double-chamber purifier prototype to incubator mentors",
+    title: "Working Prototype Demonstration to Startup Mentors",
+    titleBn: "ইনকিউবেশন মেন্টরদের সাথে প্রোটোটাইপ পর্যালোচনা",
     category: "rnd",
     categoryLabel: "R&D & Engineering",
     categoryLabelBn: "গবেষণা ও প্রকৌশল",
-    location: "AquiVira R&D Workshop",
-    locationBn: "একিভিরা গবেষণা কর্মশালা",
+    location: "Startup Accelerator Hub, Dhaka",
+    locationBn: "স্টার্টআপ এক্সিলারেটর হাব, ঢাকা",
     caption:
-      "Testing flow rates and pore sizes on sintered clay filter candles, ensuring 6,000+ to 8,000 liters lifespan with proper care.",
+      "Founding engineers demonstrating the functional double-chamber clay purifier prototype and flow rate mechanics during an intensive product review session with incubator mentors.",
     captionBn:
-      "মাটির ক্যান্ডেলের নিখুঁত মাইক্রোপোর ও ৬,০০০+ থেকে ৮,০০০ লিটার দীর্ঘমেয়াদী পরিস্রাবণ ক্ষমতা নিশ্চিত করতে ল্যাব পরীক্ষা।",
+      "ইনকিউবেশন হাবের অভিজ্ঞ টেক ও বিজনেস মেন্টরদের সামনে একিভিরার কার্যকরী দোতলা মাটির ফিল্টারের প্রোটোটাইপ এবং ডিসপেন্সিং মেকানিজম প্রদর্শন ও পরামর্শ গ্রহণ।",
     dateOrYear: "2025",
     dateOrYearBn: "২০২৫",
     accentColor: "from-indigo-500/20 to-indigo-600/10 text-indigo-600 border-indigo-300",
   },
   {
-    id: "rnd-iteration",
-    src: "/Photos/DSC09742.jpg",
-    alt: "Team collaboration and development session",
-    title: "Iterative Vessel Design & Seal Prototyping",
-    titleBn: "চেম্বারের গঠন ও সিলিকন সিলিং নকশা পর্যালোচনা",
-    category: "rnd",
-    categoryLabel: "R&D & Engineering",
-    categoryLabelBn: "গবেষণা ও প্রকৌশল",
-    location: "RUET Engineering Workspace",
-    locationBn: "রুয়েট ইঞ্জিনিয়ারিং ল্যাবরেটরি",
-    caption:
-      "Founding engineers refining double-chamber tolerances, food-grade silicone gaskets, and brass dispensing geometry.",
-    captionBn:
-      "ফিল্টারের দোতলা চেম্বার, নিরাপদ সিলিকন গ্যাসকেট ও প্রিমিয়াম ব্রাস ট্যাপের নিখুঁত ফিটিংস গবেষণা।",
-    dateOrYear: "2025",
-    dateOrYearBn: "২০২৫",
-    accentColor: "from-indigo-500/20 to-indigo-600/10 text-indigo-600 border-indigo-300",
-  },
-  {
-    id: "team-minds",
-    src: "/Photos/MTA07523-EDIT.jpg",
-    alt: "AquiVira team photoshoot",
-    title: "The Engineering Minds Behind AquiVira",
-    titleBn: "একিভিরার স্বপ্নদ্রষ্টা প্রকৌশলী দল",
-    category: "rnd",
-    categoryLabel: "R&D & Engineering",
-    categoryLabelBn: "গবেষণা ও প্রকৌশল",
-    location: "Official Team Portrait",
-    locationBn: "অফিসিয়াল পোর্ট্রেট সেশন",
-    caption:
-      "Passionate multidisciplinary team of RUET engineers and sustainability enthusiasts dedicated to reviving generational clay science.",
-    captionBn:
-      "ঐতিহ্যবাহী কুমোর শিল্প এবং আধুনিক বিজ্ঞানের মেলবন্ধনে নিবেদিত একিভিরার প্রকৌশলী দল।",
-    dateOrYear: "2025",
-    dateOrYearBn: "২০২৫",
-    accentColor: "from-indigo-500/20 to-indigo-600/10 text-indigo-600 border-indigo-300",
-  },
-  {
-    id: "team-celebration",
-    src: "/Photos/IMG_4768.JPG",
-    alt: "Team achievement celebration",
-    title: "Milestone Victory & Pre-Seed Celebration",
-    titleBn: "ইনকিউবেশন ও গ্র্যান্ট অর্জনের আনন্দ উদযাপন",
-    category: "awards",
-    categoryLabel: "Awards & Accolades",
-    categoryLabelBn: "পুরস্কার ও সম্মাননা",
-    location: "Startup Accelerator Hub",
-    locationBn: "এক্সিলারেটর হাব, ঢাকা",
-    caption:
-      "Celebrating pre-seed investment milestones, competition recognitions, and national incubator graduation.",
-    captionBn:
-      "প্রি-সিড তহবিল এবং ইনকিউবেশন গ্র্যাজুয়েশন সফলভাবে উদযাপনে একিভিরা টিম।",
-    dateOrYear: "2025",
-    dateOrYearBn: "২০২৫",
-    accentColor: "from-amber-500/20 to-amber-600/10 text-amber-600 border-amber-300",
-  },
-  {
-    id: "craft-pottery-vessel",
-    src: "/Photos/IMG20250927172423.jpg",
-    alt: "AquiVira natural clay purifier display",
-    title: "Handcrafted Terracotta Vessel & Pedestal",
-    titleBn: "ঐতিহ্যবাহী পোড়ামাটির সম্পূর্ণ ফিল্টার ইউনিট",
-    category: "craft",
-    categoryLabel: "Craft & Design",
-    categoryLabelBn: "কারিগর ও পণ্যশৈলী",
-    location: "Artisan Studio Display",
-    locationBn: "কারিগর স্টুডিও ডিসপ্লে",
-    caption:
-      "Handmade on traditional potters' wheels in Rajshahi, fired in 1000°C kilns for authentic mineral retention and structural density.",
-    captionBn:
-      "হাতে গড়া মাটির স্ট্যান্ড ও নিরাপদ ব্রাস ট্যাপসহ একিভিরার পূর্ণাঙ্গ প্রাকৃতিক ফিল্টার সিস্টেম।",
-    dateOrYear: "2025",
-    dateOrYearBn: "২০২৫",
-    accentColor: "from-rose-500/20 to-rose-600/10 text-rose-600 border-rose-300",
-  },
-  {
-    id: "craft-signature-purifier",
+    id: "signature-curzon-purifier",
     src: "/aquivira-authentic-purifier.jpg",
-    alt: "Signature AquiVira Natural Clay Water Purifier",
-    title: "Signature Clay Water Purifier (2026 Model)",
-    titleBn: "সিগনেচার মাটির পানি ফিল্টার (২০২৬ মডেল)",
+    alt: "Signature AquiVira handcrafted purifier with Curzon Hall art and clay cup",
+    title: "Heritage Curzon Hall Painted Purifier & Terracotta Tumbler",
+    titleBn: "ঐতিহ্যবাহী কার্জন হল নকশাখচিত মাটির ফিল্টার ও পানপাত্র",
     category: "craft",
     categoryLabel: "Craft & Design",
-    categoryLabelBn: "কারিগর ও পণ্যশৈলী",
-    location: "Studio Showcase",
-    locationBn: "স্টুডিও শোকেস",
+    categoryLabelBn: "ঐতিহ্যবাহী কারিগর ও পণ্য",
+    location: "AquiVira Craft Studio, Rajshahi",
+    locationBn: "একিভিরা ক্রাফট স্টুডিও, রাজশাহী",
     caption:
-      "100% natural, plastic-free clay purifier with precision food-grade brass faucet and natural evaporative cooling condensation beads.",
+      "Authentic double-chamber terracotta purifier featuring hand-painted Curzon Hall architectural art, folk Alpona motifs, precision dispensing faucet, and matching earthenware drinking tumbler.",
     captionBn:
-      "১০০% প্লাস্টিক ও বিদ্যুৎবিহীন মাটির ফিল্টার যা প্রাকৃতিকভাবে পানি ঠান্ডা ও খনিজসমৃদ্ধ রাখে।",
+      "ঐতিহ্যবাহী কার্জন হলের স্থাপত্য নকশা ও আবহমান বাংলার আলপনায় সজ্জিত একিভিরার দোতলা মাটির ফিল্টার, ব্রাস ফিটিংস ও সাথে খাঁটি মাটির পানপাত্র।",
     dateOrYear: "2026",
     dateOrYearBn: "২০২৬",
     accentColor: "from-rose-500/20 to-rose-600/10 text-rose-600 border-rose-300",
   },
   {
-    id: "craft-modern-kitchen",
-    src: "/clay-water-purifier-product-photography-modern-des.jpg",
-    alt: "AquiVira in modern dining interior",
-    title: "Earthy Elegance for Contemporary Living",
-    titleBn: "আধুনিক গৃহকোণে ঐতিহ্যবাহী শীতল পানি",
+    id: "cultural-editions",
+    src: "/aquivira-water-purifier.png",
+    alt: "AquiVira trio showcase: Folk Peacock Art, Bangladesh Flag, and Rickshaw Art",
+    title: "Cultural Editions: Peacock, National Flag & Rickshaw Art",
+    titleBn: "সাংস্কৃতিক সংস্করণ: ময়ূর লোকশিল্প, জাতীয় পতাকা ও রিকশা আর্ট",
     category: "craft",
     categoryLabel: "Craft & Design",
-    categoryLabelBn: "কারিগর ও পণ্যশৈলী",
-    location: "Modern Home Living",
-    locationBn: "মডার্ন হোম লিভিং",
+    categoryLabelBn: "ঐতিহ্যবাহী কারিগর ও পণ্য",
+    location: "Artisan Heritage Showcase, Rajshahi",
+    locationBn: "ঐতিহ্যবাহী কারিগর প্রদর্শনী, রাজশাহী",
     caption:
-      "Blending seamlessly into contemporary homes, delivering crisp naturally chilled mineral water with zero electric bills.",
+      "Signature cultural design editions celebrating Bangladeshi heritage: Folk Peacock Art, the National Flag in forest green & crimson red, and traditional Rickshaw Art.",
     captionBn:
-      "আধুনিক ঘরের আঙিনায় ঐতিহ্যবাহী মাটির স্নিগ্ধতা ও বিদ্যুৎ খরচবিহীন নিরবচ্ছিন্ন বিশুদ্ধ পানি।",
+      "বাংলার সমৃদ্ধ লোকশিল্পকে তুলে ধরতে একিভিরার তিনটি বিশেষ সংস্করণ: ঐতিহ্যবাহী ময়ূর লোকশিল্প, লাল-সবুজ জাতীয় পতাকা এবং রঙিন রিকশা আর্ট।",
     dateOrYear: "2026",
     dateOrYearBn: "২০২৬",
     accentColor: "from-rose-500/20 to-rose-600/10 text-rose-600 border-rose-300",
-  },
-  {
-    id: "forum-dialogue",
-    src: "/Photos/Extra.JPG",
-    alt: "Climate and Circular Economy Roundtable",
-    title: "Climate & Circular Economy Roundtable",
-    titleBn: "জলবায়ু ও সার্কুলার অর্থনীতি গোলটেবিল",
-    category: "summits",
-    categoryLabel: "Pitches & Summits",
-    categoryLabelBn: "পিচিং ও সামিট",
-    location: "National Sustainability Forum",
-    locationBn: "জাতীয় টেকসই উন্নয়ন ফোরাম",
-    caption:
-      "Collaborative breakout discussion on zero-waste packaging, sustainable manufacturing, and youth green entrepreneurship.",
-    captionBn:
-      "বর্জ্যহীন উৎপাদন, পরিবেশবান্ধব প্রযুক্তি ও তরুণদের সবুজ উদ্যোক্তা বিষয়ক অংশগ্রহণমূলক আলোচনা।",
-    dateOrYear: "2025",
-    dateOrYearBn: "২০২৫",
-    accentColor: "from-purple-500/20 to-purple-600/10 text-purple-600 border-purple-300",
   },
 ]
 
@@ -363,7 +362,6 @@ export default function MediaSlideshow() {
   const [progress, setProgress] = useState(0)
 
   const filmstripRef = useRef<HTMLDivElement>(null)
-  const autoplayTimerRef = useRef<NodeJS.Timeout | null>(null)
   const progressIntervalRef = useRef<NodeJS.Timeout | null>(null)
 
   // Filter slides according to chosen category
@@ -485,7 +483,6 @@ export default function MediaSlideshow() {
       awards: MEDIA_SLIDES.filter((s) => s.category === "awards").length,
       partners: MEDIA_SLIDES.filter((s) => s.category === "partners").length,
       summits: MEDIA_SLIDES.filter((s) => s.category === "summits").length,
-      community: MEDIA_SLIDES.filter((s) => s.category === "community").length,
       rnd: MEDIA_SLIDES.filter((s) => s.category === "rnd").length,
       craft: MEDIA_SLIDES.filter((s) => s.category === "craft").length,
     }
@@ -493,11 +490,10 @@ export default function MediaSlideshow() {
 
   const categories = [
     { key: "all" as MediaCategory, label: isBn ? "সকল ছবি" : "All Moments", count: categoryCounts.all, icon: Layers },
-    { key: "awards" as MediaCategory, label: isBn ? "পুরস্কার ও স্বীকৃতি" : "Awards & Honors", count: categoryCounts.awards, icon: Award },
-    { key: "partners" as MediaCategory, label: isBn ? "আন্তর্জাতিক ও সরকারি পার্টনার" : "Strategic Partners", count: categoryCounts.partners, icon: Users },
+    { key: "awards" as MediaCategory, label: isBn ? "পুরস্কার ও সম্মাননা" : "Awards & Honors", count: categoryCounts.awards, icon: Award },
+    { key: "partners" as MediaCategory, label: isBn ? "কৌশলগত ও সরকারি পার্টনার" : "Strategic Partners", count: categoryCounts.partners, icon: Users },
     { key: "summits" as MediaCategory, label: isBn ? "পিচিং ও সামিট" : "Pitches & Summits", count: categoryCounts.summits, icon: Mic },
-    { key: "community" as MediaCategory, label: isBn ? "কমিউনিটি ও মাঠপর্যায়" : "Community Impact", count: categoryCounts.community, icon: Heart },
-    { key: "rnd" as MediaCategory, label: isBn ? "গবেষণা ও প্রকৌশল" : "R&D & Engineering", count: categoryCounts.rnd, icon: Cpu },
+    { key: "rnd" as MediaCategory, label: isBn ? "গবেষণা ও প্রোটোটাইপ" : "R&D & Prototyping", count: categoryCounts.rnd, icon: Cpu },
     { key: "craft" as MediaCategory, label: isBn ? "ঐতিহ্যবাহী কারিগর ও পণ্য" : "Craft & Design", count: categoryCounts.craft, icon: Sparkles },
   ]
 
@@ -509,8 +505,6 @@ export default function MediaSlideshow() {
         return <Users className="w-3.5 h-3.5" />
       case "summits":
         return <Mic className="w-3.5 h-3.5" />
-      case "community":
-        return <Heart className="w-3.5 h-3.5" />
       case "rnd":
         return <Cpu className="w-3.5 h-3.5" />
       case "craft":
@@ -530,12 +524,12 @@ export default function MediaSlideshow() {
               <span>{isBn ? "ভিজ্যুয়াল জার্নি ও মিডিয়া" : "Visual Journey & Media"}</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-stone-900">
-              {isBn ? "স্মৃতি, সাফল্য ও মাঠপর্যায়ের গল্প" : "Moments, Milestones & Field Stories"}
+              {isBn ? "স্মৃতি, সাফল্য ও ঐতিহাসিক অর্জন" : "Moments, Milestones & Official Honors"}
             </h2>
             <p className="text-muted-foreground text-sm md:text-base max-w-2xl mt-2">
               {isBn
-                ? "ব্লু বিজনেস অ্যাওয়ার্ড থেকে শুরু করে সুইজারল্যান্ডের দূতাবাস, সুইসকনট্যাক্ট ও তৃণমূল পরিবারের সাথে একিভিরার গৌরবময় যাত্রা।"
-                : "From national innovation victories to high-level summits with Swisscontact, DEIED, and grassroots community trials."}
+                ? "ব্লু বিজনেস আইডিয়া প্রতিযোগিতা, বিশ্বব্যাংক ও হাই-টেক পার্ক কর্তৃপক্ষের অ্যাক্সিলারেটিং বাংলাদেশ, সুইসকনট্যাক্ট ও সিমকিউবেটর কর্মশালার প্রামাণ্য চিত্র।"
+                : "Authentic photographic evidence of national awards, World Bank & BHTPA incubation milestones, Swisscontact partnership, and prototype reviews."}
             </p>
           </div>
 
