@@ -254,14 +254,36 @@ export default function HomePageContent() {
             </h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {AWARDS.map((award, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-amber-400/40 transition-colors">
-                <div className="w-12 h-12 rounded-xl bg-amber-400/10 text-amber-400 flex items-center justify-center font-bold text-lg mb-4">
-                  {award.short}
+              <div
+                key={i}
+                className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-amber-400/40 hover:bg-white/[0.08] transition-all flex flex-col justify-between"
+              >
+                <div>
+                  {/* Clean White Badge Container for logo visibility */}
+                  <div className="w-full h-20 rounded-xl bg-white flex items-center justify-center p-3 mb-4 shadow-md transition-transform hover:scale-105">
+                    <img
+                      src={award.logo}
+                      alt={award.title}
+                      className="max-h-14 w-auto max-w-[90%] object-contain"
+                    />
+                  </div>
+                  {award.badge && (
+                    <span className="inline-block text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-amber-400/10 px-2.5 py-0.5 rounded-full mb-2">
+                      {language === "bn" && award.badgeBn ? award.badgeBn : award.badge}
+                    </span>
+                  )}
+                  <h3 className="font-bold text-base mb-1 text-white leading-snug">
+                    {language === "bn" && award.titleBn ? award.titleBn : award.title}
+                  </h3>
+                  {award.organizer && (
+                    <p className="text-[11px] text-amber-300/80 font-medium mb-2">{award.organizer}</p>
+                  )}
                 </div>
-                <h3 className="font-bold text-base mb-2">{award.title}</h3>
-                <p className="text-xs text-stone-400 leading-relaxed">{award.description}</p>
+                <p className="text-xs text-stone-300 leading-relaxed mt-2">
+                  {language === "bn" && award.descriptionBn ? award.descriptionBn : award.description}
+                </p>
               </div>
             ))}
           </div>

@@ -46,14 +46,32 @@ export default function MediaPage() {
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {AWARDS.map((award, i) => (
-                <div key={i} className="p-8 rounded-3xl bg-secondary/30 border border-border text-center">
-                  <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center font-extrabold text-xl mx-auto mb-4">
-                    {award.short}
+                <div
+                  key={i}
+                  className="p-6 sm:p-7 rounded-3xl bg-secondary/30 border border-border/80 text-center flex flex-col justify-between hover:border-primary/40 hover:shadow-lg transition-all duration-300"
+                >
+                  <div>
+                    {/* Official Competition Logo Well */}
+                    <div className="w-full h-24 rounded-2xl bg-white border border-stone-200/80 shadow-sm flex items-center justify-center p-3 mb-4 transition-transform hover:scale-105">
+                      <img
+                        src={award.logo}
+                        alt={award.title}
+                        className="max-h-16 w-auto max-w-[92%] object-contain"
+                      />
+                    </div>
+                    {award.badge && (
+                      <span className="inline-block text-[11px] font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full mb-3">
+                        {award.badge}
+                      </span>
+                    )}
+                    <h3 className="font-bold text-lg mb-1.5 text-stone-900 leading-snug">{award.title}</h3>
+                    {award.organizer && (
+                      <p className="text-xs font-semibold text-primary/80 mb-3">{award.organizer}</p>
+                    )}
                   </div>
-                  <h3 className="font-bold text-lg mb-2">{award.title}</h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{award.description}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed mt-2">{award.description}</p>
                 </div>
               ))}
             </div>

@@ -116,26 +116,84 @@ export const SUPPORTERS: Supporter[] = [
   },
 ]
 
-export const AWARDS = [
+export interface Award {
+  short: string
+  title: string
+  titleBn?: string
+  badge?: string
+  badgeBn?: string
+  organizer?: string
+  description: string
+  descriptionBn?: string
+  logo: string
+}
+
+export const AWARDS: Award[] = [
   {
-    short: "UIHP",
-    title: "UIHP Pre-Seed Winner",
-    description: "Recognized for innovation in sustainable water purification technology.",
+    short: "BBC",
+    title: "Blue Business Idea Competition Winner",
+    titleBn: "ব্লু বিজনেস আইডিয়া কম্পিটিশন চ্যাম্পিয়ন",
+    badge: "Champion • 1st Place",
+    badgeBn: "চ্যাম্পিয়ন • ১ম স্থান",
+    organizer: "WaterAid Bangladesh & Swisscontact",
+    description: "Awarded 1st place championship for outstanding business model addressing community safe water access.",
+    descriptionBn: "ওয়াটারএইড ও সুইসকনট্যাক্ট আয়োজিত প্রতিযোগিতায় সেরা টেকসই সামাজিক উদ্ভাবনী বিজনেস হিসেবে চ্যাম্পিয়ন সম্মাননা।",
+    logo: "/competitions/blue-business-idea.svg",
   },
   {
     short: "AB",
     title: "Accelerating Bangladesh Graduate",
-    description: "Part of the prestigious program supporting innovative Bangladeshi startups.",
+    titleBn: "অ্যাক্সিলারেটিং বাংলাদেশ গ্র্যাজুয়েট",
+    badge: "National Accelerator Cohort",
+    badgeBn: "জাতীয় এক্সিলারেটর কোহর্ট",
+    organizer: "DEIED, BHTPA & World Bank",
+    description: "Graduated from the prestigious national accelerator cohort supporting high-impact Bangladeshi ventures.",
+    descriptionBn: "আইসিটি বিভাগ, বিএইচটিপিএ ও বিশ্বব্যাংক পরিচালিত ফ্ল্যাগশিপ স্টার্টআপ এক্সিলারেটরে উত্তীর্ণ।",
+    logo: "/competitions/accelerating-bangladesh.svg",
   },
   {
-    short: "BBC",
-    title: "Blue Business Idea Competition Winner",
-    description: "Awarded for outstanding business concept with social impact potential.",
+    short: "SN26",
+    title: "Startup Nation 2026 — Top 6 Team",
+    titleBn: "স্টার্টআপ নেশন ২০২৬ — শীর্ষ ৬ দল",
+    badge: "Top 6 National Finalist",
+    badgeBn: "শীর্ষ ৬ জাতীয় ফাইনালিস্ট",
+    organizer: "Startup Nation Bangladesh",
+    description: "Recognized among Bangladesh's top six innovative startups in the premier flagship national startup challenge.",
+    descriptionBn: "সারাদেশের উদ্ভাবনী উদ্যোগগুলোর মধ্যে শীর্ষ ৬ স্টার্টআপ দলের অন্যতম হিসেবে নির্বাচিত ও জাতীয় স্বীকৃতি।",
+    logo: "/competitions/startup-nation-2026.svg",
+  },
+  {
+    short: "UIHP",
+    title: "UIHP Pre-Seed Winner",
+    titleBn: "ইউআইএইচপি প্রি-সিড বিজয়ী",
+    badge: "Pre-Seed Innovation Grant",
+    badgeBn: "প্রি-সিড উদ্ভাবন অনুদান",
+    organizer: "Bangladesh Hi-Tech Park Authority",
+    description: "Awarded pre-seed grant for breakthrough innovation in sustainable clay water purification technology.",
+    descriptionBn: "বাংলাদেশ হাই-টেক পার্ক কর্তৃপক্ষ ও ডিইআইইডি কর্তৃক টেকসই ওয়াটার পিউরিফায়ার প্রযুক্তির জন্য প্রাক-বীজ তহবিল অনুদান।",
+    logo: "/competitions/uihp-bhtpa.svg",
   },
   {
     short: "GC",
     title: "Greenovation Challenge 2025",
-    description: "2nd runners up at Environment Innovation Summit 2025.",
+    titleBn: "গ্রীনোভেশন চ্যালেঞ্জ ২০২৫",
+    badge: "2nd Runner Up",
+    badgeBn: "২য় রানার-আপ",
+    organizer: "Environment Innovation Summit 2025",
+    description: "2nd Runner Up at Environment Innovation Summit 2025 for zero-plastic, eco-friendly water filtration.",
+    descriptionBn: "পরিবেশবান্ধব ও প্লাস্টিকমুক্ত প্রযুক্তির জন্য এনভায়রনমেন্ট ইনোভেশন সামিটে ২য় রানার-আপ সম্মাননা।",
+    logo: "/competitions/greenovation-challenge.svg",
+  },
+  {
+    short: "NIF",
+    title: "National Innovation Fair",
+    titleBn: "জাতীয় উদ্ভাবনী মেলা — বঙ্গবন্ধু নভোথিয়েটার",
+    badge: "Novo Theatre Showcase",
+    badgeBn: "বঙ্গবন্ধু নভোথিয়েটার প্রদর্শনী",
+    organizer: "Bangabandhu Sheikh Mujibur Rahman Novo Theatre",
+    description: "Officially selected and exhibited AquiVira's eco-clay water purifier at the prestigious National Innovation Fair in Dhaka.",
+    descriptionBn: "বঙ্গবন্ধু শেখ মুজিবুর রহমান নভোথিয়েটারে আয়োজিত জাতীয় উদ্ভাবনী মেলায় একুইভীরা পিউরিফায়ারের সরাসরি সফল প্রদর্শনী।",
+    logo: "/competitions/novotheatre-fair.svg",
   },
 ]
 

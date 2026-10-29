@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0260B5"/>
+      <stop offset="100%" stop-color="#004282"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9E1B"/>
+      <stop offset="100%" stop-color="#F26522"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left: BLUE uplifting you emblem -->
+  <g transform="translate(20, 22)">
+    <!-- Letter B -->
+    <path d="M0 6 C0 2.5 2.5 0 6 0 L16 0 C22 0 26 3.5 26 9 C26 13 23 16 19 17 C24 18 28 22 28 28 C28 34.5 23 38 16 38 L6 38 C2.5 38 0 35.5 0 32 Z M10 8 L10 15 L15 15 C17.5 15 19 13.5 19 11.5 C19 9.5 17.5 8 15 8 Z M10 22 L10 30 L16 30 C19 30 20.5 28.5 20.5 26 C20.5 23.5 19 22 16 22 Z" fill="url(#blueGrad)"/>
+    
+    <!-- Letter L -->
+    <path d="M34 2 C34 1 35 0 36 0 L44 0 C45 0 46 1 46 2 L46 28 L59 28 C60.5 28 61.5 29 61.5 30.5 L61.5 36 C61.5 37.5 60.5 38 59 38 L36 38 C35 38 34 37 34 36 Z" fill="url(#blueGrad)"/>
+    
+    <!-- Letter U -->
+    <path d="M68 2 C68 1 69 0 70 0 L78 0 C79 0 80 1 80 2 L80 23 C80 27 82 29 86 29 C90 29 92 27 92 23 L92 2 C92 1 93 0 94 0 L102 0 C103 0 104 1 104 2 L104 23 C104 33 97 39 86 39 C75 39 68 33 68 23 Z" fill="url(#blueGrad)"/>
+    
+    <!-- Sprout/Tent under U -->
+    <path d="M86 38 L90 24 L94 38 L90 35 Z" fill="url(#amberGrad)"/>
+    <circle cx="90" cy="22" r="2.5" fill="#FF9E1B"/>
+
+    <!-- Letter E -->
+    <path d="M111 2 C111 1 112 0 113 0 L136 0 C137.5 0 138.5 1 138.5 2.5 L138.5 8 C138.5 9.5 137.5 10 136 10 L123 10 L123 14 L133 14 C134.5 14 135.5 15 135.5 16.5 L135.5 21.5 C135.5 23 134.5 24 133 24 L123 24 L123 28 L137 28 C138.5 28 139.5 29 139.5 30.5 L139.5 36 C139.5 37.5 138.5 38 137 38 L113 38 C112 38 111 37 111 36 Z" fill="url(#blueGrad)"/>
+    
+    <!-- uplifting you -->
+    <text x="70" y="58" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="13" font-style="italic" font-weight="700" fill="#475569" text-anchor="middle" letter-spacing="0.5">uplifting you</text>
+  </g>
+
+  <!-- Divider line -->
+  <line x1="178" y1="20" x2="178" y2="105" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Right: Business Idea Competition text & Partners -->
+  <g transform="translate(196, 20)">
+    <rect x="0" y="0" width="180" height="22" rx="6" fill="#0260B5"/>
+    <text x="90" y="15" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.8">CHAMPION • 1ST PLACE</text>
+    
+    <text x="0" y="42" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="15" font-weight="800" fill="#0F172A" letter-spacing="-0.2">Business Idea</text>
+    <text x="0" y="60" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="15" font-weight="800" fill="#0260B5" letter-spacing="-0.2">Competition</text>
+    
+    <g transform="translate(0, 75)">
+      <circle cx="5" cy="6" r="3" fill="#00A3E0"/>
+      <text x="12" y="10" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="11" font-weight="700" fill="#475569">WaterAid</text>
+      <text x="64" y="10" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="10" fill="#94A3B8">•</text>
+      <circle cx="75" cy="6" r="3" fill="#D52B1E"/>
+      <text x="82" y="10" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="11" font-weight="700" fill="#475569">Swisscontact</text>
+    </g>
+  </g>
+</svg>

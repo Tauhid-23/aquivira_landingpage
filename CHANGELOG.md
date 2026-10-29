@@ -11,6 +11,11 @@ Format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Major Release - AquiVira 3.0 Production Rollout
 Complete interactive, sensory, and cultural transformation of the platform:
+- **Official Competition Recognitions & Vector Logos**:
+  - Replaced placeholder letter badges (`UIHP`, `AB`, `BBC`, `GC`) on both `/media` and the Homepage with authentic, crisp vector logos (`public/competitions/`).
+  - Added **Startup Nation 2026 — Top 6 Team** milestone (`/competitions/startup-nation-2026.svg`): recognized among Bangladesh's top six innovative startups in the national flagship innovation challenge.
+  - Added **National Innovation Fair at Bangabandhu Novo Theatre** (`/competitions/novotheatre-fair.svg`): exhibited and demonstrated AquiVira's eco-clay water purifier at the prestigious National Innovation Fair in Dhaka.
+  - Expanded recognitions to a balanced 6-item grid (`sm:grid-cols-2 lg:grid-cols-3`) with dedicated logo wells, bilingual badges, organizer accreditations, and full descriptions across English and Bengali (`EN` | `বাংলা`).
 - **Tier 1 (Sensory, Cultural & Authentic Polish)**:
   - **Cinematic Interactive Media Slideshow & Photo Gallery**:
     - Comprehensive media showcase (`components/media/MediaSlideshow.tsx`) featuring 16 authentic photos from the AquiVira collection across 5 categories (Awards & Honors, Strategic Partners, Pitches & Summits, R&D & Prototyping, Craft & Design).

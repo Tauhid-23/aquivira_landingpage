@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="novoDomeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="novoBadgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E40AF"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="starGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left: Bangabandhu Novo Theatre Planetarium Dome & Orbits -->
+  <g transform="translate(20, 18)">
+    <!-- Base podium -->
+    <rect x="10" y="76" width="70" height="8" rx="2" fill="#334155"/>
+    <rect x="5" y="82" width="80" height="4" rx="1.5" fill="#64748B"/>
+
+    <!-- Planetarium Architectural Hemisphere Dome -->
+    <path d="M18 76 C18 42 30 25 45 25 C60 25 72 42 72 76 Z" fill="url(#novoDomeGrad)"/>
+    
+    <!-- Dome ribs / architectural panels -->
+    <path d="M45 25 V 76" stroke="#93C5FD" stroke-width="1.2" opacity="0.6"/>
+    <path d="M32 30 C34 45 35 62 35 76" stroke="#93C5FD" stroke-width="1" opacity="0.5"/>
+    <path d="M58 30 C56 45 55 62 55 76" stroke="#93C5FD" stroke-width="1" opacity="0.5"/>
+    
+    <!-- Inclined Celestial / Atomic Orbit ring -->
+    <ellipse cx="45" cy="52" rx="42" ry="16" fill="none" stroke="#F59E0B" stroke-width="2" transform="rotate(-18 45 52)" stroke-dasharray="85 8"/>
+    <!-- Orbiting satellite / planet -->
+    <circle cx="82" cy="40" r="3.5" fill="url(#starGold)"/>
+    <circle cx="8" cy="64" r="2" fill="#60A5FA"/>
+
+    <!-- Discovery Starburst on top of dome -->
+    <polygon points="45,12 47,20 54,20 48,24 50,31 45,26 40,31 42,24 36,20 43,20" fill="url(#starGold)"/>
+  </g>
+
+  <!-- Divider -->
+  <line x1="125" y1="20" x2="125" y2="105" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Right: Typography & Event Details -->
+  <g transform="translate(142, 18)">
+    <!-- Fair Exhibitor Pill Badge -->
+    <rect x="0" y="0" width="190" height="20" rx="5" fill="url(#novoBadgeGrad)"/>
+    <text x="95" y="14" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="9" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.8">NATIONAL INNOVATION FAIR</text>
+    
+    <!-- Fair Name -->
+    <text x="0" y="44" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="14" font-weight="900" fill="#0F172A" letter-spacing="0.2">National Innovation Fair</text>
+    <text x="0" y="62" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="13" font-weight="800" fill="#1D4ED8" letter-spacing="0.4">Bangabandhu Novo Theatre</text>
+    
+    <!-- Subtitle & Mandate -->
+    <text x="0" y="80" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#047857" letter-spacing="0.3">Live Clean-Tech Prototype Showcase</text>
+    <text x="0" y="96" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#64748B" letter-spacing="0.2">Govt. Science &amp; Innovation Exhibition, Dhaka</text>
+  </g>
+</svg>

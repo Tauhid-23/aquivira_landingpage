@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="greenLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="bronzeBadge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#9A3412"/>
+    </linearGradient>
+    <linearGradient id="terracottaAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB923C"/>
+      <stop offset="100%" stop-color="#C2410C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left: Eco Leaf & Clean Water Droplet Emblem -->
+  <g transform="translate(25, 20)">
+    <!-- Outer eco circle with leaf notches -->
+    <circle cx="45" cy="45" r="40" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+    
+    <!-- Water Drop + Sprouting Leaf Geometry -->
+    <!-- Water drop -->
+    <path d="M45 15 C45 15 25 42 25 55 C25 67 34 75 45 75 C56 75 65 67 65 55 C65 42 45 15 45 15 Z" fill="url(#greenLeaf)"/>
+    
+    <!-- Central leaf vein (white) -->
+    <path d="M45 28 L45 68" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M45 42 Q37 40 34 46" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+    <path d="M45 52 Q53 50 56 56" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+
+    <!-- Small terracotta clay leaf accent -->
+    <path d="M52 24 C58 20 66 22 68 28 C68 34 62 38 56 34 Z" fill="url(#terracottaAccent)"/>
+  </g>
+
+  <!-- Divider -->
+  <line x1="130" y1="20" x2="130" y2="105" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Right: Greenovation Challenge Typography -->
+  <g transform="translate(148, 18)">
+    <!-- Runner up Pill Badge -->
+    <rect x="0" y="0" width="185" height="20" rx="5" fill="url(#bronzeBadge)"/>
+    <text x="92" y="14" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="9" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.8">★ 2ND RUNNER UP WINNER ★</text>
+    
+    <!-- Title -->
+    <text x="0" y="44" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="16" font-weight="900" fill="#047857" letter-spacing="0.5">GREENOVATION</text>
+    <text x="0" y="64" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="14" font-weight="800" fill="#0F172A" letter-spacing="1">CHALLENGE 2025</text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="82" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="10" font-weight="700" fill="#C2410C" letter-spacing="0.3">Environment Innovation Summit</text>
+    <text x="0" y="96" font-family="'Segoe UI', Roboto, system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#64748B" letter-spacing="0.2">Eco-Clay &amp; Zero-Plastic Innovation Honors</text>
+  </g>
+</svg>
